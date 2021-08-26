@@ -1,0 +1,70 @@
+header{
+    #navbar{
+        @include flexbox;
+        width: 100%;
+        height: max-content;
+        background-color: $color-primary;
+        position: sticky;
+        .row{
+            flex-direction: row;
+            justify-content: space-between !important;
+        
+        .logo{
+            padding: 15px;
+        }
+        .menu{
+            @include flexbox; 
+            flex-direction: row;
+            ul{
+                @include flexbox;
+                flex-direction: row;
+                width: 80%;
+                padding: 15px;
+                li{
+                    padding: 10px 15px;
+                    list-style: none;
+                    border-radius: 7%;
+                    &:hover{
+                        background-color: rgb(128, 118, 118);
+                    }
+                    a{
+                        color: $color-terninary;
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+             .log-in-book{
+                 @include flexbox; 
+                 flex-direction: row;
+                 width: 27%;
+                 justify-content: space-between !important;
+                #log-in-btn{
+                    padding: 12px 17px;
+                    text-decoration: none;
+                    color: $color-terninary;
+                    border: 1px solid $color-secondary;
+                    border-radius: 7%;
+                    &:hover{
+                        background-color: rgb(119, 119, 156);
+                    }
+                }
+                #book-btn{
+                    background-color: $color-secondary;
+                    color: $color-terninary;
+                    padding: 12px 25px;
+                    border-radius: 7%;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: rgb(61, 122, 235);
+                    }
+                }
+             }
+
+
+           
+        }
+        }
+    }
+}

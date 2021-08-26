@@ -1,0 +1,46 @@
+footer{
+    width: 100%;
+    height: max-content;
+    background-color: $color-secondary;
+    .footup{
+        @include flexbox;
+        flex-direction: row;
+        padding: 50px;
+        flex-wrap: wrap;
+        height: max-content;
+        .footinfo{
+            text-align: center;
+            height: max-content;
+            >*{
+                margin: 20px 0;
+            }
+            h4{
+                color: $color-terninary;
+                font-size: 1.5rem;
+            }
+            p{
+                color: $color-terninary;
+                text-align: center;
+            }
+            svg{
+                padding: 15px;
+                border: 2px solid white;
+                border-radius: 50%;
+                color: $color-terninary;
+                margin-right: 15px;
+            }
+        }
+    }
+    
+}
+
+.footdown{
+    width: 100%;
+    height: 100px;
+    padding: 35px;
+    background-color:rgb(26,37,47);
+    text-align: center;
+    small{
+        color: white;
+    }
+}
