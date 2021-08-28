@@ -1,10 +1,13 @@
+// This is scss file of header part
+
 header{
     #navbar{
         @include flexbox;
         width: 100%;
         height: max-content;
-        background-color: $color-primary;
+        background-color: #0f0d1e;
         position: sticky;
+        overflow: visible;
         .row{
             flex-direction: row;
             justify-content: space-between !important;
@@ -23,9 +26,9 @@ header{
                 li{
                     padding: 10px 15px;
                     list-style: none;
-                    border-radius: 7%;
+                    border-radius: 5%;
                     &:hover{
-                        background-color: rgb(128, 118, 118);
+                        background-color: rgb(45, 44, 54);
                     }
                     a{
                         color: $color-terninary;
@@ -45,7 +48,7 @@ header{
                     text-decoration: none;
                     color: $color-terninary;
                     border: 1px solid $color-secondary;
-                    border-radius: 7%;
+                    border-radius: 5px;
                     &:hover{
                         background-color: rgb(119, 119, 156);
                     }
@@ -54,7 +57,7 @@ header{
                     background-color: $color-secondary;
                     color: $color-terninary;
                     padding: 12px 25px;
-                    border-radius: 7%;
+                    border-radius: 5px;
                     text-decoration: none;
                     &:hover{
                         background-color: rgb(61, 122, 235);

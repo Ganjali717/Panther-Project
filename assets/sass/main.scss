@@ -16,11 +16,16 @@
 @import "../sass/variables/colors";
 @import "../sass/variables/spacing";
 
-//Mixins
+// Mixins
 @import "../sass/mixins/flexbox";
 @import "../sass/mixins/responsive";
 
 // Components
-@import "./components/header";
-@import "./components/footer";
-@import "./components/sections";
+@import "../sass/components/header";
+@import "../sass/components/footer";
+
+// Pages 
+@import "../sass/pages/homepage";
+@import "../sass/pages/blog";
+@import "../sass/pages/empl-ret-str";
+@import "../sass/pages/gl-empl-header";

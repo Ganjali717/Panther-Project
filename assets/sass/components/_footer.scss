@@ -1,46 +1,119 @@
 footer{
     width: 100%;
-    height: max-content;
-    background-color: $color-secondary;
-    .footup{
-        @include flexbox;
-        flex-direction: row;
-        padding: 50px;
-        flex-wrap: wrap;
-        height: max-content;
-        .footinfo{
-            text-align: center;
-            height: max-content;
-            >*{
-                margin: 20px 0;
-            }
-            h4{
-                color: $color-terninary;
-                font-size: 1.5rem;
-            }
+    background-color: #0f0d1e;
+    padding: 100px;
+    .column{
+        @include flexbox; 
+        flex-direction: column;
+        justify-content: space-between !important;
+        .footer-up{
+         @include flexbox; 
+         flex-direction: row;
+         justify-content: space-between;
+         img{
+             width: 50px;
+             height: 50px
+         }
+         .footer-menu{
+             @include flexbox; 
+             flex-direction: row;
+             justify-content: space-around;
+             .footer-company{
+                 h5{
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    text-align: left;
+                    letter-spacing: 1.5px;
+                 }
+                 ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            text-decoration: none;
+                            color: whitesmoke;
+                        }
+                    }
+                 }
+             }
+             .footer-resources{
+                 h5{
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                 }
+                 p{
+                     color: whitesmoke;
+                 }
+                 ul{
+                     @include flexbox; 
+                     flex-direction: column;
+                     align-items: flex-start;
+                     li{
+                         list-style: none;
+                         padding: 10px;
+                         a{
+                             color: whitesmoke;
+                             text-decoration: none;
+
+                         }
+                     }
+                 }
+             }
+             .footer-legal{
+                 h5{
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                    text-align: center; 
+                 }
+                 ul{
+                     @include flexbox; 
+                     flex-direction: column;
+                     li{
+                         padding: 15px;
+                         list-style: none;
+                         a{
+                             text-decoration: none;
+                             color: whitesmoke;
+                         }
+                     }
+                 }
+             }
+         }
+         .subscribe{
+             h5{
+                color: #adaabf;
+             }
+             p{
+                color: #adaabf;
+             }
+             input{
+                 width: 100%;
+                 padding: 10px;
+                 border-radius: 5px;
+             }
+             a{
+                background-color: #075eaa;
+                padding: 15px 35px;
+                border-radius: 5px;
+                color: whitesmoke;
+                text-decoration: none;
+             }
+         }
+        }
+        .footer-down{
             p{
-                color: $color-terninary;
+                color: #adaabf;
                 text-align: center;
             }
-            svg{
-                padding: 15px;
-                border: 2px solid white;
-                border-radius: 50%;
-                color: $color-terninary;
-                margin-right: 15px;
-            }
         }
-    }
-    
-}
-
-.footdown{
-    width: 100%;
-    height: 100px;
-    padding: 35px;
-    background-color:rgb(26,37,47);
-    text-align: center;
-    small{
-        color: white;
     }
 }

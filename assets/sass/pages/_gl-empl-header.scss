@@ -1,0 +1,458 @@
+// Blog/global-employment-for-remote-teams
+
+main#glbl{
+    @include flexbox; 
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    #gl-empl-header{
+        @include flexbox; 
+        flex-direction: column;
+        width: 100%;
+        padding: 150px;
+        background-color: #0f0d1e;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            .gl-empl-text{
+                height: max-content;
+                h1{
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                    font-size: 45px;
+                    line-height: 55px;
+                    font-weight: 600;
+                    transition-duration: 0.3s;
+                    transition-timing-function: linear;
+                    transition-delay: 0.1s;
+                }
+                p{
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                }
+                a{
+                    padding: 15px 25px;
+                    color: white;
+                    border-radius: 4px;
+                    background-color: #5b35d5;
+                    text-decoration: none;
+                }
+                a#gl-empl-cntctus{
+                    display: inline;
+                    padding: 15px 25px;
+                    border-radius: 4px;
+                    border: 1px solid white;
+                    margin-left: 5px;
+                    background-color: #0f0d1e;
+                    color: white;
+                }
+            }
+            
+        }
+       
+    }
+    #gl-empl-second-header{
+        width: 100%;
+        height: max-content;
+        background-color: #1b1734;
+        padding: 150px;
+        .row{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            h5{
+                max-width: 200px;
+                color: white;
+                font-size: 14px;
+                line-height: 20px;
+                float: left;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: rgba(91,53,213,.2);
+                letter-spacing: .6px;
+                text-transform: uppercase;
+            }
+            .why-choose-talent{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between !important;
+                align-items: center;
+                .why-choose-left{
+                    h3{
+                        font-family: Inter,sans-serif;
+                        color: #fff;
+                        font-size: 33px;
+                        line-height: 40px;
+                        font-weight: 600;
+                        opacity: 1;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        transition-delay: 0.1s;
+                        transform: translate3d(-20px, 0px, 0px) scale3d(1, 1, 1) rotateX(1deg) rotateY(0deg) rotateZ(0deg) skew(1deg, 0deg);
+                        transform-style: preserve-3d;
+                    }
+                }
+                .why-choose-right{
+                    p{
+                        color: #fff;
+                        font-weight: 300;
+                        font-family: Inter,sans-serif;
+                    }
+                }
+               
+            }
+        }
+    }
+    #feature-section{
+        width: 100%;
+        height: max-content;
+        background-color: #0f0d1e;
+        padding: 150px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .ftr-header{
+                @include flexbox; 
+                flex-direction: column;
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: 600;
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                }
+                p{
+                    color: #adaabf;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+            .ftr-btn{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                .active{
+                    background-color: #1b1734;
+                    border: 1px solid #66e7d8;
+                }
+                a{
+                    padding: 15px 25px;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 5px;
+                    background-color: #322b5f;
+                }
+            }
+            .ftr-card{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                border-radius: 16px;
+                background-color: #1b1734;
+                padding:  55px 45px;
+                .ftr-card-txt{
+                    @include flexbox;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    h5{
+                        color: #fff;
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: 400;
+                    }
+                    p{
+
+                        color: white;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 300;
+                    }
+                    a{
+                        color: white;
+                        font-size: 16px;
+                        text-decoration: none;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+                .ftr-card-img{
+                    img{
+                        width: 480px;
+                        height: 320px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #benefits{
+        width: 100%;
+        height: max-content;
+        background-color: #1b1734;
+        padding: 150px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            h5{
+                color: white;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: rgba(91,53,213,.2);
+                letter-spacing: .6px;
+                text-transform: uppercase;
+                font-family: Roboto,sans-serif;
+                font-size: 14px;
+                line-height: 25px;
+                font-weight: 400;
+            }
+            .benefits-head{
+                h2{
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                    font-size: 35px;
+                    line-height: 50px;
+                    font-weight: 600;
+                }
+            }
+            .benefits-list{
+                @include flexbox;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                ul{
+                    li{
+                        font-family: Inter,sans-serif;
+                         color: #fff;
+                         font-size: 16px;
+                         line-height: 150%;
+                         list-style: none;
+                         padding: 10px;
+                         &::before{
+                             content: '✓';
+                             margin-right: 5px;
+                         }
+                    }
+                }
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 15px 25px;
+                background-color: #7460ef;
+                border-radius: 5px;
+            }
+        }
+    }
+    #hr{
+        width: 100%;
+        height: max-content;
+        background-color: #0f0d1e;
+        padding: 150px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            h4{
+                font-size: 30px;
+                line-height: 40px;
+                font-family: Inter,sans-serif;
+                color: #fff;
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 600;
+            }
+            .hr-list{
+                @include flexbox;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                ul{
+                    li{
+                        font-family: Inter,sans-serif;
+                         color: #fff;
+                         font-size: 16px;
+                         line-height: 150%;
+                         list-style: none;
+                         padding: 10px;
+                         &::before{
+                             content: '✓';
+                             margin-right: 5px;
+                         }
+                    }
+                }
+            }
+            a{
+                color:white;
+                border: 1px solid white;
+                background-color: #0f0d1e;
+                padding: 15px 25px;
+                text-decoration: none;
+                border-radius: 8px;
+                &:hover{
+                    background-color: #716f8825;
+                    transition: 0.2s ease-in;
+                }
+            }
+            .hr-card{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 48px;
+                border-radius: 16px;
+                background-color: #5b35d5;
+                h5{
+                    border: 1px solid #f7f5fd;
+                    background-color: transparent;
+                    color: #f7f5fd;
+                    letter-spacing: .6px;
+                    text-transform: uppercase;
+                    padding: 4px 12px;
+                    border-radius: 4px;
+
+                }
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                    font-weight: 600;
+                }
+                a{
+                    color: white;
+                    border-radius: 5px;
+                    background-color: #0f0d1e;
+                    padding: 17px 40px;
+                    border: none;
+                    transition: .3s cubic-bezier(.25, .46, .45, .94);
+                    color: #fff;
+                    font-size: 16px;
+                    &:hover{
+                        background-color: #38335c; 
+                    }
+                }
+            }
+        }
+    }
+    #form-contact-us{
+        width: 100%;
+        height: max-content;
+        padding: 50px;
+        background-color: #0f0d1e;
+
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .form-text{
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: white;
+                    font-family: Inter,sans-serif;
+                    font-weight: 600;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    background-color: #5b35d5;
+                    transition: .3s cubic-bezier(.25, .46, .45, .94);
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 16px 32px;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #7460ef;
+                    }
+                }
+            }
+            .form-right{
+                @include flexbox;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                background-color: white;
+                border-radius: 15px;
+                padding: 35px 45px;
+                form{
+                    width: 100%;
+                    input{
+                        width: 100%;
+                        padding: 15px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.137);
+                    }
+                    textarea{
+                        width: 100%;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.137);
+                    }
+                    input[type = "submit"]{
+                        background-color: #5b35d5;
+                        color: white;
+                        &:hover{
+                            background-color: #7460ef;
+                        }
+                    }
+                    #check-label{
+                        width: 100%;
+                        @include flexbox; 
+                        flex-direction: row;
+                        justify-content: space-around;
+                        input[type="checkbox"]{
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #help-decide{
+        width: 100%;
+        background-color: #1b1734;
+        padding: 150px;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between;
+            .help-decide-head{
+                h1{
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 30px;
+                     line-height: 40px;
+                }
+            }
+            .help-decide-quest{
+
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .quest{
+                    padding: 15px;
+                    h4{
+                        color: #fff;
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

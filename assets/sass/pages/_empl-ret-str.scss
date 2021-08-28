@@ -1,0 +1,107 @@
+// Blog/employee-retention-strategy
+
+main{
+    width: 100%;
+    height: max-content;
+    #empl-ret-str{
+        width: 100%;
+        height: max-content;
+        padding: 50px;
+        background-color: #ebeaf5;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            .empl-head{
+                @include flexbox; 
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 25px;
+                h1{
+                    font-family: Inter,sans-serif;
+                    color: #0f0d1e;
+                    font-size: 56px;
+                    line-height: 120%;
+                    font-weight: 600;
+                    text-align: left;
+                    max-width: 850px;
+                }
+                a{
+                    text-decoration: none;
+                    padding: 11px 17px;
+                    background-color: #5b35d5;
+                    color: white;
+                    font-family: Rajdhani,sans-serif !important;
+                    font-size: 18px;
+                    font-weight: 400;
+                    border-radius: 5px;
+                    text-align: left;
+                }
+                img{
+                    width: 820px;
+                    height: 500px;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    #empl-ret-str-second{
+        width: 100%;
+        height: max-content;
+        padding: 50px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            .empl-body-head{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    display: inline;
+                }
+                .line{
+                    border-top: 2px solid black;
+                }
+                p{
+                    display: inline-block;
+                }
+            }
+            .empl-body-text{
+                p{
+
+                    font-family: Inter,sans-serif;
+                    line-height: 150%;
+                    font-size: 18px;
+                    a{
+                        text-decoration: none;
+                        font-family: Inter,sans-serif;
+                        line-height: 150%;
+                        color: #5b35d5;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+                ul{
+                    li{
+                        font-size: 18px;
+                        font-family: Inter,sans-serif;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    font-family: Inter,sans-serif;
+                    line-height: 150%;
+                    color: #5b35d5;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                b{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
