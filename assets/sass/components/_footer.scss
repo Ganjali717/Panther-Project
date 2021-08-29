@@ -19,15 +19,20 @@ footer{
              flex-direction: row;
              justify-content: space-around;
              .footer-company{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between !important;
+                align-items: flex-start;
                  h5{
                     color: #adaabf;
                     font-size: 18px;
                     line-height: 1.5;
                     font-weight: 500;
-                    text-align: left;
+                    text-align: center;
                     letter-spacing: 1.5px;
                  }
                  ul{
+                     
                     li{
                         list-style: none;
                         padding: 10px;
@@ -39,6 +44,10 @@ footer{
                  }
              }
              .footer-resources{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between !important;
+                align-items: flex-start;
                  h5{
                     color: #adaabf;
                     font-size: 18px;
@@ -66,17 +75,20 @@ footer{
                  }
              }
              .footer-legal{
+                @include flexbox; 
+                flex-direction: column;
                  h5{
                     color: #adaabf;
                     font-size: 18px;
                     line-height: 1.5;
                     font-weight: 500;
                     letter-spacing: 1.5px;
-                    text-align: center; 
+                    text-align: center;
                  }
                  ul{
                      @include flexbox; 
                      flex-direction: column;
+                     align-items: flex-start;
                      li{
                          padding: 15px;
                          list-style: none;

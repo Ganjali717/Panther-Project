@@ -1,0 +1,142 @@
+// Countries page sass file
+
+main#countries{
+    width: 100%;
+    height: max-content;
+    #countries-header{
+        width: 100%;
+        height: max-content;
+        padding: 150px;
+        background-color: #0f0d1e;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between!important;
+            .cntr-hd-left{
+               h1{
+                font-size: 34px;
+                font-family: Inter,sans-serif;
+                color: #fff;
+                line-height: 120%;
+                font-weight: 600;
+               }
+               p{
+                font-family: Inter,sans-serif;
+                color: #adaabf;
+                 font-size: 20px;
+                 text-align: left;
+               }
+            }
+        }
+    }
+    #countries-names{
+        width: 100%;
+        height: max-content;
+        background-color: #1b1734;
+        padding: 150px;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            ul{
+                li{
+                    list-style: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    #countries-book{
+        width: 100%;
+        height: max-content;
+        background-color: #0f0d1e;
+        padding: 150px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                color: #fff;
+                font-size: 35px;
+                line-height: 120%;
+                font-weight: 600;
+            }
+            a{
+                color: white;
+                padding: 16px 32px;
+                border-radius: 5px;
+                background-color: #5b35d5;
+                text-decoration: none;
+            }
+        }
+    }
+    #countries-build{
+        width: 100%;
+        height: max-content;
+        background-color: #1b1734;
+        padding: 150px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            .countries-build-first{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                h1{
+                    color: white;
+                    line-height: 140%;
+                    font-weight: 600;
+                    font-family: Inter,sans-serif;
+                    font-size: 33px;
+                }
+                .built-first-play{
+                    @include flexbox; 
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    p{
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 300;
+                        padding-top: 10px;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .countries-build-second{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between !important;
+                .build-second-cards{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    h5{
+                        font-family: Inter,sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: white;
+                    }
+                    p{
+                        color: #adaabf;
+                    }
+                    a{
+                        color: #867df3;
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

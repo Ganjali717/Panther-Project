@@ -1,0 +1,39 @@
+// Log-in page scss
+
+
+    
+.log-in{
+    @include flexbox; 
+    flex-direction: row;
+    height: 100%;
+    .log-in-left{
+        width: 30%;
+        height: 750px;
+        background-color: rgb(248, 248, 252);
+        aside{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            .center-text{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center; 
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .log-in-right{
+        width: 70%;
+        .column{
+            @include flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

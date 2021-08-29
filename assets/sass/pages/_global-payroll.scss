@@ -1,0 +1,207 @@
+// Global payroll scss file
+
+
+main#glbl-payroll{
+  width: 100%;
+  height: max-content;
+  #glbl-payroll-header{
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px;
+    .row{
+      @include flexbox; 
+      flex-direction: row;
+      justify-content: space-between !important;
+      .payroll-header-left{
+        h1{
+          font-family: Inter,sans-serif;
+          color: #fff;
+          line-height: 120%;
+          font-weight: 600;
+        }
+        a{
+           text-decoration: none;
+           color: white;
+           padding: 16px 32px;
+           border-radius: 5px;
+           background-color: #5b35d5;
+           font-size: 17px;
+           line-height: 150%;
+           font-weight: 400;
+           text-align: center;
+        }
+      }
+      .payroll-header-right{
+        img{
+          width: 600px;
+          height: 450px;
+        }
+      }
+    }
+  }
+  #glbl-payroll-cards{
+    width: 100%;
+    height: max-content;
+    background-color: #1b1734;
+    padding: 150px;
+    .row{
+       .payroll-cards{
+        background-color: #0f0d1e;
+        border-radius: 10px;
+        padding: 30px;
+        height: min-content;
+       img{
+         width: 30px;
+         height: 30px;
+       }
+       h4{
+         color: white;
+         font-family: Inter,sans-serif;
+         font-size: 24px;
+         line-height: 150%;
+         font-weight: 500
+       }
+       p{
+        color: #adaabf;
+        font-size: 20px;
+       }
+       }
+     
+    }
+  }
+  #glbl-payroll-book{
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px;
+    .column{
+      @include flexbox; 
+      flex-direction: column;
+      justify-content: space-between;
+      h2{
+        font-family: Inter,sans-serif;
+        color: white;
+      }
+      a{
+        color: white;
+        border-radius: 4px;
+        background-color: #5b35d5;
+        font-size: 17px;
+        line-height: 150%;
+        font-weight: 400;
+        padding: 16px 32px;
+        text-decoration: none;
+      }
+    }
+  }
+  #glbl-payroll-questions{
+    background-color: #1b1734;
+    width: 100%;
+    height: max-content;
+    padding: 150px;
+    .row{
+      @include flexbox; 
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .payroll-faq-left{
+        h1{
+          color: white;
+          font-family: Inter,sans-serif;
+        }
+      }
+      .payroll-faq-right{
+        ul{
+          @include flexbox; 
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          li{
+            list-style: none;
+            color: #fff;
+            font-size: 20px;
+            line-height: 150%;
+            font-weight: 400;
+            padding: 25px;
+          }
+        }
+        p{
+          color: #adaabf;
+          font-size: 20px;
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  #glbl-payroll-build{
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px;
+    .column{
+        @include flexbox; 
+        flex-direction: column;
+        justify-content: space-between;
+        .payroll-build-first{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            h1{
+                color: white;
+                line-height: 140%;
+                font-weight: 600;
+                font-family: Inter,sans-serif;
+                font-size: 33px;
+            }
+            .built-first-play{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                p{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding-top: 10px;
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .payroll-build-second{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between !important;
+            .build-second-cards{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                h5{
+                    font-family: Inter,sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: white;
+                }
+                p{
+                    color: #adaabf;
+                }
+                a{
+                    color: #867df3;
+                    font-size: 16px;
+                    line-height: 150%;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+}

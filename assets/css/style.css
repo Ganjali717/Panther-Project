@@ -11303,58 +11303,78 @@ footer {
         align-items: center;
         flex-direction: row;
         justify-content: space-around; }
-        footer .column .footer-up .footer-menu .footer-company h5, footer .column .footer-up .footer-menu .footer-company .h5 {
-          color: #adaabf;
-          font-size: 18px;
-          line-height: 1.5;
-          font-weight: 500;
-          text-align: left;
-          letter-spacing: 1.5px; }
-        footer .column .footer-up .footer-menu .footer-company ul li {
-          list-style: none;
-          padding: 10px; }
-          footer .column .footer-up .footer-menu .footer-company ul li a {
-            text-decoration: none;
-            color: whitesmoke; }
-        footer .column .footer-up .footer-menu .footer-resources h5, footer .column .footer-up .footer-menu .footer-resources .h5 {
-          color: #adaabf;
-          font-size: 18px;
-          line-height: 1.5;
-          font-weight: 500;
-          letter-spacing: 1.5px;
-          text-align: center; }
-        footer .column .footer-up .footer-menu .footer-resources p {
-          color: whitesmoke; }
-        footer .column .footer-up .footer-menu .footer-resources ul {
+        footer .column .footer-up .footer-menu .footer-company {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          justify-content: space-between !important;
           align-items: flex-start; }
-          footer .column .footer-up .footer-menu .footer-resources ul li {
+          footer .column .footer-up .footer-menu .footer-company h5, footer .column .footer-up .footer-menu .footer-company .h5 {
+            color: #adaabf;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 1.5px; }
+          footer .column .footer-up .footer-menu .footer-company ul li {
             list-style: none;
             padding: 10px; }
-            footer .column .footer-up .footer-menu .footer-resources ul li a {
-              color: whitesmoke;
-              text-decoration: none; }
-        footer .column .footer-up .footer-menu .footer-legal h5, footer .column .footer-up .footer-menu .footer-legal .h5 {
-          color: #adaabf;
-          font-size: 18px;
-          line-height: 1.5;
-          font-weight: 500;
-          letter-spacing: 1.5px;
-          text-align: center; }
-        footer .column .footer-up .footer-menu .footer-legal ul {
+            footer .column .footer-up .footer-menu .footer-company ul li a {
+              text-decoration: none;
+              color: whitesmoke; }
+        footer .column .footer-up .footer-menu .footer-resources {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between !important;
+          align-items: flex-start; }
+          footer .column .footer-up .footer-menu .footer-resources h5, footer .column .footer-up .footer-menu .footer-resources .h5 {
+            color: #adaabf;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-align: center; }
+          footer .column .footer-up .footer-menu .footer-resources p {
+            color: whitesmoke; }
+          footer .column .footer-up .footer-menu .footer-resources ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start; }
+            footer .column .footer-up .footer-menu .footer-resources ul li {
+              list-style: none;
+              padding: 10px; }
+              footer .column .footer-up .footer-menu .footer-resources ul li a {
+                color: whitesmoke;
+                text-decoration: none; }
+        footer .column .footer-up .footer-menu .footer-legal {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column; }
-          footer .column .footer-up .footer-menu .footer-legal ul li {
-            padding: 15px;
-            list-style: none; }
-            footer .column .footer-up .footer-menu .footer-legal ul li a {
-              text-decoration: none;
-              color: whitesmoke; }
+          footer .column .footer-up .footer-menu .footer-legal h5, footer .column .footer-up .footer-menu .footer-legal .h5 {
+            color: #adaabf;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-align: center; }
+          footer .column .footer-up .footer-menu .footer-legal ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start; }
+            footer .column .footer-up .footer-menu .footer-legal ul li {
+              padding: 15px;
+              list-style: none; }
+              footer .column .footer-up .footer-menu .footer-legal ul li a {
+                text-decoration: none;
+                color: whitesmoke; }
       footer .column .footer-up .subscribe h5, footer .column .footer-up .subscribe .h5 {
         color: #adaabf; }
       footer .column .footer-up .subscribe p {
@@ -12331,3 +12351,339 @@ main#glbl {
             font-size: 22px;
             line-height: 30px;
             font-weight: 400; }
+
+main#countries {
+  width: 100%;
+  height: max-content; }
+  main#countries #countries-header {
+    width: 100%;
+    height: max-content;
+    padding: 150px;
+    background-color: #0f0d1e; }
+    main#countries #countries-header .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between !important; }
+      main#countries #countries-header .row .cntr-hd-left h1, main#countries #countries-header .row .cntr-hd-left .h1 {
+        font-size: 34px;
+        font-family: Inter,sans-serif;
+        color: #fff;
+        line-height: 120%;
+        font-weight: 600; }
+      main#countries #countries-header .row .cntr-hd-left p {
+        font-family: Inter,sans-serif;
+        color: #adaabf;
+        font-size: 20px;
+        text-align: left; }
+  main#countries #countries-names {
+    width: 100%;
+    height: max-content;
+    background-color: #1b1734;
+    padding: 150px; }
+    main#countries #countries-names .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      main#countries #countries-names .row ul li {
+        list-style: none;
+        color: white; }
+  main#countries #countries-book {
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px; }
+    main#countries #countries-book .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between; }
+      main#countries #countries-book .column h1, main#countries #countries-book .column .h1 {
+        color: #fff;
+        font-size: 35px;
+        line-height: 120%;
+        font-weight: 600; }
+      main#countries #countries-book .column a {
+        color: white;
+        padding: 16px 32px;
+        border-radius: 5px;
+        background-color: #5b35d5;
+        text-decoration: none; }
+  main#countries #countries-build {
+    width: 100%;
+    height: max-content;
+    background-color: #1b1734;
+    padding: 150px; }
+    main#countries #countries-build .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between; }
+      main#countries #countries-build .column .countries-build-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        main#countries #countries-build .column .countries-build-first h1, main#countries #countries-build .column .countries-build-first .h1 {
+          color: white;
+          line-height: 140%;
+          font-weight: 600;
+          font-family: Inter,sans-serif;
+          font-size: 33px; }
+        main#countries #countries-build .column .countries-build-first .built-first-play {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center; }
+          main#countries #countries-build .column .countries-build-first .built-first-play p {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            padding-top: 10px; }
+          main#countries #countries-build .column .countries-build-first .built-first-play img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer; }
+      main#countries #countries-build .column .countries-build-second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between !important; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards img {
+          width: 40px;
+          height: 40px; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards h5, main#countries #countries-build .column .countries-build-second .build-second-cards .h5 {
+          font-family: Inter,sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          color: white; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards p {
+          color: #adaabf; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards a {
+          color: #867df3;
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 400;
+          text-decoration: none; }
+
+main#glbl-payroll {
+  width: 100%;
+  height: max-content; }
+  main#glbl-payroll #glbl-payroll-header {
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px; }
+    main#glbl-payroll #glbl-payroll-header .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between !important; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-left h1, main#glbl-payroll #glbl-payroll-header .row .payroll-header-left .h1 {
+        font-family: Inter,sans-serif;
+        color: #fff;
+        line-height: 120%;
+        font-weight: 600; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-left a {
+        text-decoration: none;
+        color: white;
+        padding: 16px 32px;
+        border-radius: 5px;
+        background-color: #5b35d5;
+        font-size: 17px;
+        line-height: 150%;
+        font-weight: 400;
+        text-align: center; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-right img {
+        width: 600px;
+        height: 450px; }
+  main#glbl-payroll #glbl-payroll-cards {
+    width: 100%;
+    height: max-content;
+    background-color: #1b1734;
+    padding: 150px; }
+    main#glbl-payroll #glbl-payroll-cards .row .payroll-cards {
+      background-color: #0f0d1e;
+      border-radius: 10px;
+      padding: 30px;
+      height: min-content; }
+      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards img {
+        width: 30px;
+        height: 30px; }
+      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards h4, main#glbl-payroll #glbl-payroll-cards .row .payroll-cards .h4 {
+        color: white;
+        font-family: Inter,sans-serif;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 500; }
+      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards p {
+        color: #adaabf;
+        font-size: 20px; }
+  main#glbl-payroll #glbl-payroll-book {
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px; }
+    main#glbl-payroll #glbl-payroll-book .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between; }
+      main#glbl-payroll #glbl-payroll-book .column h2, main#glbl-payroll #glbl-payroll-book .column .h2 {
+        font-family: Inter,sans-serif;
+        color: white; }
+      main#glbl-payroll #glbl-payroll-book .column a {
+        color: white;
+        border-radius: 4px;
+        background-color: #5b35d5;
+        font-size: 17px;
+        line-height: 150%;
+        font-weight: 400;
+        padding: 16px 32px;
+        text-decoration: none; }
+  main#glbl-payroll #glbl-payroll-questions {
+    background-color: #1b1734;
+    width: 100%;
+    height: max-content;
+    padding: 150px; }
+    main#glbl-payroll #glbl-payroll-questions .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-left h1, main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-left .h1 {
+        color: white;
+        font-family: Inter,sans-serif; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right ul li {
+          list-style: none;
+          color: #fff;
+          font-size: 20px;
+          line-height: 150%;
+          font-weight: 400;
+          padding: 25px; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right p {
+        color: #adaabf;
+        font-size: 20px; }
+        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right p a {
+          text-decoration: none; }
+  main#glbl-payroll #glbl-payroll-build {
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    padding: 150px; }
+    main#glbl-payroll #glbl-payroll-build .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between; }
+      main#glbl-payroll #glbl-payroll-build .column .payroll-build-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-first h1, main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .h1 {
+          color: white;
+          line-height: 140%;
+          font-weight: 600;
+          font-family: Inter,sans-serif;
+          font-size: 33px; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center; }
+          main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play p {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            padding-top: 10px; }
+          main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer; }
+      main#glbl-payroll #glbl-payroll-build .column .payroll-build-second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between !important; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards img {
+          width: 40px;
+          height: 40px; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards h5, main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards .h5 {
+          font-family: Inter,sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          color: white; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards p {
+          color: #adaabf; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards a {
+          color: #867df3;
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 400;
+          text-decoration: none; }
+
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%; }
+  .log-in .log-in-left {
+    width: 30%;
+    height: 750px;
+    background-color: #f8f8fc; }
+    .log-in .log-in-left aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px; }
+      .log-in .log-in-left aside .center-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .log-in .log-in-left aside .center-text h4, .log-in .log-in-left aside .center-text .h4 {
+          text-align: center; }
+  .log-in .log-in-right {
+    width: 70%; }
+    .log-in .log-in-right .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
