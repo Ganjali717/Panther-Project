@@ -54,23 +54,22 @@ main{
                 }
                 .link-watch-video{
                     position: absolute;
-                    width: 50px;
-                    height: 50px;
-                    left: 100px;
+                    width: 80px;
+                    height: 80px;
+                    left: 300px;
+                    top: 200px !important;
                     text-align: center;
                     margin: 0 auto;
                     background-color: rgba(134,125,243,.88);
                     border-radius: 50%;
-                    top: auto;
-                    bottom: auto;
                     img{
+                        position: absolute;
+                        top: 22px;
+                        left: 22px;
                         width: 35px;
                         height: 35px;
-                        vertical-align: middle;
                         display: inline-block;
                         max-width: 100%;
-                        padding-top: 0;
-                        padding-bottom: 0;
                         border: 1px transparent;
                         border-radius: 16px;
                     }
@@ -101,9 +100,9 @@ main{
             }
             .call-platform{
                 @include flexbox; 
-                flex-direction: row !important;
+                flex-direction: row ;
                 height: min-content;
-                justify-content: space-between !important;
+                justify-content: space-between;
                 background-color: #5b35d5;
                 border-radius: 25px;
                 padding: 20px 70px;
@@ -118,7 +117,6 @@ main{
                 .call-platform-image{
                     
                     img{
-                        float: right;
                         width: 400px;
                         height: 400px;
                     }
@@ -133,13 +131,13 @@ main{
         padding: 80px;
         .column{
             @include flexbox;
-            flex-direction: column !important;
+            flex-direction: column;
             justify-content: space-between !important;
             align-items: center !important;
             .main-feature{
                 @include flexbox; 
-                flex-direction: row !important;
-                justify-content: space-between !important;
+                flex-direction: row ;
+                justify-content: space-between ;
                 background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png),linear-gradient(
                     100deg
                     ,#1b1734,#0f0d1e);

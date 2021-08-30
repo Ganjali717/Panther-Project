@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panther - Automated global payroll and compliance for remote teams</title>
-    <link href="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60144401d8ab4663b07173fa_32x32.png" rel="shortcut icon" type="image/x-icon">
+    <!-- <link href="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60144401d8ab4663b07173fa_32x32.png" rel="shortcut icon" type="image/x-icon"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
+
 <body>
 
     <header>
@@ -20,22 +23,58 @@
                         </a>
                     </div>
                     <div class="menu col-9">
-                        
                         <ul>
-                           <li><a href="">How it works</a>  </li>
-                           <li><a href="">Why Panther</a></li>
-                           <li><a href="">Pricing</a></li>
-                           <li><a href="">Countries</a></li>
-                           <li><a href="">Resources</a></li>
+                            <li id="howitwork">
+                                <a href="" id="">How it works <i class="bi bi-arrow-down-short"></i></a>
+                                <div class="dropdown-menu-header col-5">
+                                    <ul>
+                                        <li><a href="">Global Employment</a></li>
+                                        <li><a href="">Globall Payroll</a></li>
+                                        <li><a href="">Contractors</a></li>
+                                        <li><a href="">Benefits</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Why Panther</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Countries</a></li>
+                            <li id="headresources">
+                                <a href="">Resources <i class="bi bi-arrow-down-short"></i></a>
+                                <div class="second-dropdown-menu-header  col-5">
+
+                                    <ul>
+                                        <h5>Partners</h5>
+                                        <li><a href="">All Partner programs</a></li>
+                                        <li><a href="">Panther for Startups</a></li>
+                                        <li><a href="">Referral Partner</a></li>
+
+                                        <h5>Being remote</h5>
+
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">How to get a remote job</a></li>
+                                        <li><a href="">Remote Hiring & Inclusive Capitalism</a></li>
+                                        <h5>Blog</h5>
+                                        <h5>Community</h5>
+                                        <h5>Case Studies</h5>
+                                        <h5>Help Center</h5>
+                                    </ul>
+
+                                </div>
+                            </li>
                         </ul>
                         <div class="log-in-book">
-                            <a href="" id="log-in-btn">Log in</a>
+                            <a href="log-in.html" id="log-in-btn">Log in</a>
                             <a href="" id="book-btn">Book a demo</a>
                         </div>
-                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
                     </div>
 
-                
+
+
                 </div>
             </div>
         </nav>
@@ -43,159 +82,182 @@
 
     <main>
         <section id="payroll">
-         <div class="container">
-             <div class="row">
-                 <div class="payroll-text col-6 ">
-                     <div class="payroll-first-text">
-                          <h1>Automated global payroll and compliance for remote teams</h1>
-                         <p>
-                            Panther puts global payroll, benefits, taxes, and local compliance on auto-pilot, without you having to set up a subsidiary.
-                         </p>
-                      <a href="">Book a demo</a>
-                     </div>
-                     <div class="payroll-second-text">
-                        <i>Trusted by</i>
-                        <br>
-                        <img src="assets/images/bevy-logo.png" alt="">
-                        <img src="assets/images/bigid-logo.png" alt="">
-                        <img src="assets/images/draftbit-logo.png" alt="">
-                        <img src="assets/images/dwelling-logo.png" alt="">
-                        <img src="assets/images/fubotv-logo.png" alt="">
-                        <img src="assets/images/latch-logo.png" alt="">
-                        <img src="assets/images/shutterstock-logo.png" alt="">
-                     </div>
-                 </div>
-                 <div class="payroll-logo-image col-6">
-                     <img src="assets/images/payroll-logo.png" alt="">
-                     <a href="#" class="link-watch-video"><img src="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60082c87924a612e9a9e398f_icon-play-white.svg" loading="lazy" alt=""></a>
-                 </div>
-             </div>
-         </div>
+            <div class="container">
+                <div class="row">
+                    <div class="payroll-text col-lg-6 col-md-4 ">
+                        <div class="payroll-first-text">
+                            <h1>Automated global payroll and compliance for remote teams</h1>
+                            <p>
+                                Panther puts global payroll, benefits, taxes, and local compliance on auto-pilot,
+                                without you having to set up a subsidiary.
+                            </p>
+                            <a href="">Book a demo</a>
+                        </div>
+                        <div class="payroll-second-text">
+                            <i>Trusted by</i>
+                            <br>
+                            <img src="assets/images/bevy-logo.png" alt="">
+                            <img src="assets/images/bigid-logo.png" alt="">
+                            <img src="assets/images/draftbit-logo.png" alt="">
+                            <img src="assets/images/dwelling-logo.png" alt="">
+                            <img src="assets/images/fubotv-logo.png" alt="">
+                            <img src="assets/images/latch-logo.png" alt="">
+                            <img src="assets/images/shutterstock-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="payroll-logo-image col-6 col-lg-5">
+                        <img src="assets/images/payroll-logo.png" alt="">
+                        <a href="#" class="link-watch-video"><img
+                                src="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60082c87924a612e9a9e398f_icon-play-white.svg"
+                                loading="lazy" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="call-to-action">
             <div class="container">
-                <div class="row">
-                    <div class="call-text col-11">
-                          <h2 class="col-5">Employing globally is an
+                <div class="row col-12">
+                    <div class="call-text col-12">
+                        <h2 class="col-4">Employing globally is an
                             anxiety-inducing trip <br>
                             Not with Panther.</h2>
-                            <p class="col-6">When you hire the world’s best, great work comes with it. But growing a global powerhouse is not easy, or cheap. Compliance? Years to figure out. The costs? At least $80,000 per country.
-<br><br>
-                                With Panther, years of bureaucracy turn to minutes, and subsidiaries become a thing of the past — for a fraction of the cost.</p>
+                        <p class="col-8">When you hire the world’s best, great work comes with it. But growing a global
+                            powerhouse is not easy, or cheap. Compliance? Years to figure out. The costs? At least
+                            $80,000 per country.
+                            <br><br>
+                            With Panther, years of bureaucracy turn to minutes, and subsidiaries become a thing of the
+                            past — for a fraction of the cost.
+                        </p>
                     </div>
-                    <div class="call-platform col-11">
-                       <div class="call-platform-text col-5">
-                           <h1>
-                            One platform that gets everything done <br>
-                            Yes, e-ve-ry-thing.
-                           </h1>
-                           <br>
-                           <p>
-                            From setup to paycheck, you can manage every detail of your global team’s employment through Panther.
-                           </p>
-                       </div>
-                       <div class="call-platform-image col-6">
-                           <img src="assets/images/call-platform.png" alt="">
-                       </div>
+                    <div class="call-platform col-12">
+                        <div class="call-platform-text col-6">
+                            <h1>
+                                One platform that gets everything done <br>
+                                Yes, e-ve-ry-thing.
+                            </h1>
+                            <br>
+                            <p>
+                                From setup to paycheck, you can manage every detail of your global team’s employment
+                                through Panther.
+                            </p>
+                        </div>
+                        <div class="call-platform-image col-6">
+                            <img src="assets/images/call-platform.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="feature-section">
-          <div class="container">
-              <div class="column">
-                <div class="main-feature col-12">
-                    <div class="main-feature-text col-5">
-                        <p id="ftr-h-txt">
-                            HIRE ANYONE IN THE WORLD
-                        </p>
-                        <br>
-                        <h2>
-                            Turnkey employment in over 160 countries.
-                        </h2>
-                        <br>
-                        <p>Don't waste years setting up foreign subsidiaries, and save millions in the process. We have our own, so you can start working with your teammates, right away.</p>
-                        <br>
-                        <a href="">Explore global employment <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                          </svg></a>
+            <div class="container">
+                <div class="column">
+                    <div class="main-feature col-12">
+                        <div class="main-feature-text col-6">
+                            <p id="ftr-h-txt">
+                                HIRE ANYONE IN THE WORLD
+                            </p>
+                            <br>
+                            <h2>
+                                Turnkey employment in over 160 countries.
+                            </h2>
+                            <br>
+                            <p>Don't waste years setting up foreign subsidiaries, and save millions in the process. We
+                                have our own, so you can start working with your teammates, right away.</p>
+                            <br>
+                            <a href="">Explore global employment <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                    height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg></a>
 
+                        </div>
+                        <div class="main-feature-image col-5">
+                            <img src="assets/images/main-feature-1.png" alt="">
+                        </div>
                     </div>
-                    <div class="main-feature-image col-5">
-                        <img src="assets/images/main-feature-1.png" alt="">
+                    <br>
+                    <br>
+                    <div class="main-feature col-12">
+                        <div class="main-feature-text col-6">
+                            <p id="ftr-h-txt-2">
+                                COMPLIANCE ON AUTO-PILOT
+                            </p>
+                            <br>
+                            <h2>
+                                Compliance in minutes. From Japan to Nigeria.
+                            </h2>
+                            <br>
+                            <p>Keeping up with foreign laws, tax legislation, and compliance filings puts important work
+                                in the backlog. Our global labor law experts handle all that for you. You don’t have to
+                                do a thing.</p>
+                            <br>
+                            <a href="">Explore global compliance <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                    height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg></a>
+
+                        </div>
+                        <div class="main-feature-image col-5">
+                            <img src="assets/images/main-feature-2.png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="main-feature col-12">
+                        <div class="main-feature-text col-6">
+                            <p id="ftr-h-txt">
+                                GLOBAL PAYROLL
+                            </p>
+                            <br>
+                            <h2>
+                                One click, one invoice: everyone gets paid.
+                            </h2>
+                            <br>
+                            <p>Don’t stress over currency and tax calculations. With our simplified payroll, one click
+                                pays everyone in your team, no matter where they live. They withdraw their payments in
+                                their local currency.</p>
+                            <br>
+                            <a href="">Learn about payroll<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg></a>
+
+                        </div>
+                        <div class="main-feature-image col-5">
+                            <img src="assets/images/main-feature-3.png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="main-feature col-12">
+                        <div class="main-feature-text col-6">
+                            <p id="ftr-h-txt-2">
+                                GLOBAL BENEFITS
+                            </p>
+                            <br>
+                            <h2>
+                                Keep your team healthy and protected.
+                            </h2>
+                            <br>
+                            <p>They get access to a comprehensive, global, and private healthcare insurance. We can also
+                                add company- or country-specific benefits that’ll keep them happy and motivated to do
+                                great work.</p>
+                            <br>
+                            <a href="">Learn about global benefits <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                    height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg></a>
+
+                        </div>
+                        <div class="main-feature-image col-5">
+                            <img src="assets/images/main-feature-4.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <div class="main-feature col-12">
-                    <div class="main-feature-text col-5">
-                        <p id="ftr-h-txt-2">
-                            COMPLIANCE ON AUTO-PILOT
-                        </p>
-                        <br>
-                        <h2>
-                            Compliance in minutes. From Japan to Nigeria.
-                        </h2>
-                        <br>
-                        <p>Keeping up with foreign laws, tax legislation, and compliance filings puts important work in the backlog. Our global labor law experts handle all that for you. You don’t have to do a thing.</p>
-                        <br>
-                        <a href="">Explore global compliance <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                          </svg></a>
-
-                    </div>
-                    <div class="main-feature-image col-5">
-                        <img src="assets/images/main-feature-2.png" alt="">
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="main-feature col-12">
-                    <div class="main-feature-text col-5">
-                        <p id="ftr-h-txt">
-                            GLOBAL PAYROLL
-                        </p>
-                        <br>
-                        <h2>
-                            One click, one invoice: everyone gets paid.
-                        </h2>
-                        <br>
-                        <p>Don’t stress over currency and tax calculations. With our simplified payroll, one click pays everyone in your team, no matter where they live. They withdraw their payments in their local currency.</p>
-                        <br>
-                        <a href="">Learn about payroll<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                          </svg></a>
-
-                    </div>
-                    <div class="main-feature-image col-5">
-                        <img src="assets/images/main-feature-3.png" alt="">
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="main-feature col-12">
-                    <div class="main-feature-text col-5">
-                        <p id="ftr-h-txt-2">
-                            GLOBAL BENEFITS
-                        </p>
-                        <br>
-                        <h2>
-                            Keep your team healthy and protected.
-                        </h2>
-                        <br>
-                        <p>They get access to a comprehensive, global, and private healthcare insurance. We can also add company- or country-specific benefits that’ll keep them happy and motivated to do great work.</p>
-                        <br>
-                        <a href="">Learn about global benefits <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                          </svg></a>
-
-                    </div>
-                    <div class="main-feature-image col-5">
-                        <img src="assets/images/main-feature-4.png" alt="">
-                    </div>
-                </div>
-              </div>
-          </div>
+            </div>
         </section>
         <section id="cards-section">
             <div class="container">
@@ -207,19 +269,23 @@
                     <div class="cards col-12">
                         <div class="cards-list col-4">
                             <h4>Onboard teammates in minutes.</h4>
-                            <p>No unnecessary questions or steps in the way. Your teammates can onboard in just a few clicks.</p>
+                            <p>No unnecessary questions or steps in the way. Your teammates can onboard in just a few
+                                clicks.</p>
                         </div>
                         <div class="cards-list col-4">
                             <h4>Employ in 160+ countries.</h4>
-                            <p>Build your global team compliantly, anywhere you want. No need to establish local entities.</p>
+                            <p>Build your global team compliantly, anywhere you want. No need to establish local
+                                entities.</p>
                         </div>
                         <div class="cards-list col-4">
                             <h4>Flat price, no extra fees.</h4>
-                            <p>Pay a single fee for each new international hire, whether you’re welcoming ten or ten thousand.</p>
+                            <p>Pay a single fee for each new international hire, whether you’re welcoming ten or ten
+                                thousand.</p>
                         </div>
                         <div class="cards-list col-4">
                             <h4>They’re your employees.</h4>
-                            <p>We don’t own the creative talent, you do. Employees’ IP and day-to-day business, it’s all yours to keep.</p>
+                            <p>We don’t own the creative talent, you do. Employees’ IP and day-to-day business, it’s all
+                                yours to keep.</p>
                         </div>
                         <div class="cards-list col-4 ">
                             <h4>One source of truth.</h4>
@@ -227,10 +293,11 @@
                         </div>
                         <div class="cards-list col-4">
                             <h4>Employer and team support.</h4>
-                            <p>We’ll be there for you and your teammates, every step of the way. Including offboarding.</p>
+                            <p>We’ll be there for you and your teammates, every step of the way. Including offboarding.
+                            </p>
                         </div>
 
-                        
+
                     </div>
                     <br>
                     <div class="cards-btn col-12">
@@ -241,19 +308,19 @@
         </section>
         <section id="cards-love">
             <div class="container">
-                <div class="column">
+                <div class="column col-12">
                     <div class="cards-love-txt col-12">
                         <h2>Why companies love Panther</h2>
                     </div>
                     <br><br>
-                    <div class="cards-love-workers col-11">
+                    <div class="cards-love-workers col-12">
                         <div class="workers-img col-10">
                             <div class="worker col-3 active">
-                              <img src="assets/images/worker-1.png" alt="">
-                              <div class="worker-name">
-                                  <h5>Inbar D.</h5>
-                                  <p>Big ID</p>
-                              </div>
+                                <img src="assets/images/worker-1.png" alt="">
+                                <div class="worker-name">
+                                    <h5>Inbar D.</h5>
+                                    <p>Big ID</p>
+                                </div>
                             </div>
                             <div class="worker col-3">
                                 <img src="assets/images/worker-2.png" alt="">
@@ -273,7 +340,8 @@
                     </div>
                     <div class="workers-comments col-11">
                         <div class="workers-comments-first">
-                            "Working with Panther has given us the ability to expand our global teams by having the right partner to rely on for expert local advice."
+                            "Working with Panther has given us the ability to expand our global teams by having the
+                            right partner to rely on for expert local advice."
                         </div>
                         <br>
                         <p>- Inbar Dayan, Head of People & Culture at Big ID</p>
@@ -282,79 +350,91 @@
             </div>
         </section>
         <section id="call-to-action">
-           <div class="container">
-               <div class="column">
-                   <div class="action-head">
-                    Build the global team of your dreams. Let us do the heavy-lifting.
-                   </div>
-                   <br>
-                   <a href="">Book a demo</a>
-               </div>
-           </div>
+            <div class="container">
+                <div class="column">
+                    <div class="action-head">
+                        Build the global team of your dreams. Let us do the heavy-lifting.
+                    </div>
+                    <br>
+                    <a href="">Book a demo</a>
+                </div>
+            </div>
         </section>
         <section id="global-section">
-          <div class="container">
-              <div class="column">
-                  <h3>Latest from our blog</h3>
-                  <br>
-                  <div class="global-card col-12">
-                      <div class="global-card-item col-4">
-                       <div class="global-card-up">
-                         <img src="assets/images/global-card-1.png" alt="">
-                         <p class="card-up-">Remote Work & Culture</p>
+            <div class="container">
+                <div class="column">
+                    <h3>Latest from our blog</h3>
+                    <br>
+                    <div class="global-card col-12">
+                        <div class="global-card-item col-4">
+                            <div class="global-card-up">
+                                <img src="assets/images/global-card-1.png" alt="">
+                                <p class="card-up-">Remote Work & Culture</p>
 
-                         </div>
-                         <div class="global-card-down">
-                            <h2>Biggest challenges in HR today and how to sustain engagement</h2>
-                            <p class="paragraph-excerpt homepage">HR should influence a company's key policies and decisions. Here are some of the biggest challenges in HR, from our friends at Onsite.fun</p>
-                            <br>
-                            <div class="glbl-date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
-                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
-                                  </svg>
-                                  <p>August 23, 2021</p>
                             </div>
-                         </div>
-                      </div>
-                      <div class="global-card-item col-4">
-                        <div class="global-card-up">
-                          <img src="assets/images/global-card-3.png" alt="">
-                          <p>Remote Work & Culture</p>
+                            <div class="global-card-down">
+                                <h2>Biggest challenges in HR today and how to sustain engagement</h2>
+                                <p class="paragraph-excerpt homepage">HR should influence a company's key policies and
+                                    decisions. Here are some of the biggest challenges in HR, from our friends at
+                                    Onsite.fun</p>
+                                <br>
+                                <div class="glbl-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-calendar4" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                                    </svg>
+                                    <p>August 23, 2021</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="global-card-down">
-                         <h2>Biggest challenges in HR today and how to sustain engagement</h2>
-                         <p class="paragraph-excerpt homepage">HR should influence a company's key policies and decisions. Here are some of the biggest challenges in HR, from our friends at Onsite.fun</p>
-                         <br>
-                         <div class="glbl-date">
-                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
-                                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
-                               </svg>
-                               <p>August 23, 2021</p>
-                         </div>
+                        <div class="global-card-item col-4">
+                            <div class="global-card-up">
+                                <img src="assets/images/global-card-3.png" alt="">
+                                <p>Remote Work & Culture</p>
+                            </div>
+                            <div class="global-card-down">
+                                <h2>Biggest challenges in HR today and how to sustain engagement</h2>
+                                <p class="paragraph-excerpt homepage">HR should influence a company's key policies and
+                                    decisions. Here are some of the biggest challenges in HR, from our friends at
+                                    Onsite.fun</p>
+                                <br>
+                                <div class="glbl-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-calendar4" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                                    </svg>
+                                    <p>August 23, 2021</p>
+                                </div>
+                            </div>
                         </div>
-                       </div>
-                       <div class="global-card-item col-4">
-                        <div class="global-card-up">
-                          <img src="assets/images/global-card-3.png" alt="">
-                          <p>Remote Work & Culture</p>
+                        <div class="global-card-item col-4">
+                            <div class="global-card-up">
+                                <img src="assets/images/global-card-3.png" alt="">
+                                <p>Remote Work & Culture</p>
+                            </div>
+                            <div class="global-card-down">
+                                <h2>Biggest challenges in HR today and how to sustain engagement</h2>
+                                <p class="paragraph-excerpt homepage">HR should influence a company's key policies and
+                                    decisions. Here are some of the biggest challenges in HR, from our friends at
+                                    Onsite.fun</p>
+                                <br>
+                                <div class="glbl-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-calendar4" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                                    </svg>
+                                    <p>August 23, 2021</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="global-card-down">
-                         <h2>Biggest challenges in HR today and how to sustain engagement</h2>
-                         <p class="paragraph-excerpt homepage">HR should influence a company's key policies and decisions. Here are some of the biggest challenges in HR, from our friends at Onsite.fun</p>
-                         <br>
-                         <div class="glbl-date">
-                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
-                                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
-                               </svg>
-                               <p>August 23, 2021</p>
-                         </div>
-                        </div>
-                       </div>
-                  </div>
-                  <br>
-                  <a href="">Read more</a>
-              </div>
-          </div>
+                    </div>
+                    <br>
+                    <a href="">Read more</a>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -364,51 +444,51 @@
                 <div class="footer-up col-12">
                     <img src="assets/images/panther-logo.svg" alt="">
                     <div class="footer-menu col-9">
-                      <div class="footer-company col-3">
-                          <h5>COMPANY</h5>
-                          <ul>
-                              <li><a href="">About Us</a></li>
-                              <li><a href="">Contact Us</a></li>
-                              <li><a href="">Press</a></li>
-                              <li><a href="">Careers</a></li>
-                              <li><a href="">Help Center</a></li>
-                              <li><a href="">Webinars</a></li>
-                              <li><a href="">Our Manifesto</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-resources col-3">
-                          <h5>WORKING WITH PANTHER</h5>
-                          <p>Get employed with Panther</p>
-                          <br>
-                          <h5>RESOURCES</h5>
-                          <ul>
-                              <li><a href="">Community</a></li>
-                              <li><a href="">Blog</a></li>
-                              <li><a href="">Case Studies</a></li>
-                              <li><a href="">Release Notes</a></li>
-                              <li><a href="">How to get a remote job</a></li>
-                              <li><a href="">Help Center</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-legal col-3">
-                          <h5>LEGAL</h5>
-                          <ul>
-                              <li><a href="">Privacy Policy</a></li>
-                              <li><a href="">Terms and Conditions</a></li>
-                              <li><a href="">Terms of Use</a></li>
-                          </ul>
-                      </div>
+                        <div class="footer-company col-3">
+                            <h5>COMPANY</h5>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Press</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Webinars</a></li>
+                                <li><a href="">Our Manifesto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-resources col-3">
+                            <h5>WORKING WITH PANTHER</h5>
+                            <p>Get employed with Panther</p>
+                            <br>
+                            <h5>RESOURCES</h5>
+                            <ul>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Case Studies</a></li>
+                                <li><a href="">Release Notes</a></li>
+                                <li><a href="">How to get a remote job</a></li>
+                                <li><a href="">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-legal col-3">
+                            <h5>LEGAL</h5>
+                            <ul>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">Terms of Use</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="subscribe col-3">
-                      <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
-                      <br>
-                      <p>Get the latest tips, news and resources on global employment and remote working.</p>
-                      <br>
-                      <input type="text" placeholder="Name">
-                      <br><br>
-                      <input type="email" placeholder="Email address">
-                      <br><br>
-                      <a href="">Submit</a>
+                        <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <br>
+                        <p>Get the latest tips, news and resources on global employment and remote working.</p>
+                        <br>
+                        <input type="text" placeholder="Name">
+                        <br><br>
+                        <input type="email" placeholder="Email address">
+                        <br><br>
+                        <a href="">Submit</a>
                     </div>
                 </div>
                 <br>
@@ -421,6 +501,8 @@
             </div>
         </div>
     </footer>
-    
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

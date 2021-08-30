@@ -1,7 +1,5 @@
 @media only screen and (max-width:992px){
-    [class*="col-"]{
-        width: 100%;
-    }
+  
     header .menu ul{
         display: none!important;
     }
@@ -23,12 +21,103 @@
     h6{
         font-size: 1rem;
     }
+    p,
+    li,
+    a{
+        font-size: 1rem;
+    }
 
     
 }
 
 @media only screen and (min-width:992px){
-    header svg{
-        display: none;
+    //For laptop
+     header{
+        svg{
+            display: none !important;
+            float: right;
+            color: white;
+        }
+     }
+}
+
+@media only screen and (max-width:992px){
+   //For tablets
+   header{
+       .menu{
+           justify-content: flex-end !important;
+       }
+    .menu ul, .log-in-book{
+        display: none !important;
     }
+    svg{
+        display: block !important;
+    }
+   }
+   #call-to-action{
+      .call-platform{
+          justify-content: center !important;
+          flex-direction: column !important;
+          img{
+              width: 300px !important;
+              height: 300px !important;
+          }
+      }
+   }
+   #global-section{
+       .global-card{
+           flex-direction: column !important;
+           .global-card-item{
+               padding-top: 25px;
+           }
+       }
+   }
+   #feature-section{
+       .main-feature{
+           flex-direction: column !important;
+           justify-content: center;
+           align-items: center !important;
+           .main-feature-text{
+               a{
+                   padding: 10px !important;
+                   svg{
+                       width: 20px !important;
+                       height: 20px !important;
+                   }
+               }
+           }
+           .main-feature-image{
+               margin-top: 80px;
+               margin-left: -146px;
+               img{
+                width: 400px !important;
+                height: 300px !important;
+               }
+               
+           }
+       }
+   }
+   footer{
+       .footer-up{
+           flex-direction: column !important;
+           .footer-menu{
+               flex-direction: column !important;
+           }
+       }
+   }
+    
+}
+
+@media only screen and (max-width:768px){
+    /* For phones */
+    #call-to-action{
+        .call-platform{
+            justify-content: center !important;
+            flex-direction: column !important;
+            img{
+                width: 250px !important;
+                height: 250px !important;
+            }
+        }
+     }
 }
