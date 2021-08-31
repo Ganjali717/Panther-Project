@@ -24,9 +24,9 @@ main#glbl{
                     font-size: 45px;
                     line-height: 55px;
                     font-weight: 600;
-                    transition-duration: 0.3s;
-                    transition-timing-function: linear;
-                    transition-delay: 0.1s;
+                    transform: translate3d(0px, 20px, 0px) scale3d(1, 1, 1);
+                    opacity: 1;
+                    transform-style: preserve-3d;
                 }
                 p{
                     color: #adaabf;
@@ -349,7 +349,7 @@ main#glbl{
     #form-contact-us{
         width: 100%;
         height: max-content;
-        padding: 50px;
+        padding: 150px;
         background-color: #0f0d1e;
 
         .row{
@@ -428,6 +428,7 @@ main#glbl{
             @include flexbox; 
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             .help-decide-head{
                 h1{
                     font-family: Inter,sans-serif;
@@ -445,12 +446,91 @@ main#glbl{
                 align-items: flex-start;
                 .quest{
                     padding: 15px;
+                   
                     h4{
                         color: #fff;
                         font-size: 22px;
                         line-height: 30px;
                         font-weight: 400;
+                        text-align: right;
                     }
+                }
+            }
+        }
+    }
+    #cards-love{
+        background-color: #5b35d5;
+        width: 100%;
+        height: max-content;
+        padding: 100px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            justify-content: center;
+            .cards-love-txt{
+                text-align: center;
+                h2{
+                    color: whitesmoke;
+                }
+            }
+            .cards-love-workers{
+                @include flexbox; 
+                justify-content: center;
+                align-content: center;
+                padding: -1px 50px;
+                .workers-img{
+                    @include flexbox; 
+                    flex-direction: row;
+                    justify-content: space-around !important;
+                    align-items: center;
+                    .worker{
+                    @include flexbox; 
+                    flex-direction: row;
+                    justify-content: space-around;
+                    cursor: pointer;
+                    padding: 15px;
+                    background-color: transparent;
+                    opacity: .64;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .worker-name{
+                        color: whitesmoke;
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    &.active{
+                        opacity: 1;
+                        border-bottom: 2px solid #ff9a83;
+                    }
+                    }
+                   
+                }
+            }
+            .workers-comments{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                background-color: whitesmoke;
+                border-radius: 15px;
+                padding: 80px 25px;
+                .workers-comments-item{
+                    max-width: 65%;
+                    font-size: 24px;
+                    line-height: 170%;
+                    font-weight: 350;
+                    text-align: center;
+                    display: none;
+                }
+                .active{
+                   display: block;
+                }
+                p{
+                    color: #5b35d5;
+                    font-size: 20px;
                 }
             }
         }

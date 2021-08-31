@@ -293,11 +293,12 @@ main{
                             font-size: 15px;
                         }
                     }
-                    }
-                    .active{
+                    &.active{
                         opacity: 1;
                         border-bottom: 2px solid #ff9a83;
                     }
+                    }
+                   
                 }
             }
             .workers-comments{
@@ -308,12 +309,16 @@ main{
                 background-color: whitesmoke;
                 border-radius: 15px;
                 padding: 80px 25px;
-                .workers-comments-first{
+                .workers-comments-item{
                     max-width: 65%;
                     font-size: 24px;
                     line-height: 170%;
                     font-weight: 350;
                     text-align: center;
+                    display: none;
+                }
+                .active{
+                   display: block;
                 }
                 p{
                     color: #5b35d5;
@@ -354,14 +359,23 @@ main{
             @include flexbox; 
             flex-direction: column;
             justify-content: space-around !important;
+            h3{
+                color: white;
+            }
             .global-card{
                 @include flexbox; 
                 flex-direction: row;
                 justify-content: space-between !important;
-               
+               padding: 35px 0;
                 .global-card-item{
                     @include flexbox; 
                     flex-direction: column;
+                  &:nth-child(2){
+                      margin-left: 35px;
+                  }
+                  &:nth-child(3){
+                    margin-left: 35px;
+                }
                     .global-card-up{
                         position: relative;
                         img{

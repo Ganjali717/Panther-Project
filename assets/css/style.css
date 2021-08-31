@@ -11307,8 +11307,9 @@ header #navbar {
             font-size: 1.1rem;
             text-decoration: none;
             text-align: center; }
-            header #navbar .row .menu ul li a .header-down-icon {
-              display: block !important; }
+            header #navbar .row .menu ul li a img {
+              width: 20px;
+              height: 20px; }
           header #navbar .row .menu ul li .dropdown-menu-header {
             display: none; }
             header #navbar .row .menu ul li .dropdown-menu-header ul {
@@ -11332,10 +11333,6 @@ header #navbar {
                     color: #c071c0; }
                 header #navbar .row .menu ul li .dropdown-menu-header ul li a {
                   color: black; }
-                header #navbar .row .menu ul li .dropdown-menu-header ul li svg {
-                  transition: all 0.5s linear; }
-                header #navbar .row .menu ul li .dropdown-menu-header ul li svg.open {
-                  transform: rotate(180deg); }
           header #navbar .row .menu ul li .second-dropdown-menu-header {
             display: none; }
             header #navbar .row .menu ul li .second-dropdown-menu-header ul {
@@ -11343,6 +11340,7 @@ header #navbar {
               justify-content: center;
               align-items: center;
               position: absolute;
+              z-index: -1;
               flex-direction: column;
               justify-content: flex-start;
               align-items: flex-start;
@@ -11364,6 +11362,9 @@ header #navbar {
                   transform: rotate(180deg); }
           header #navbar .row .menu ul li .active-dropdown {
             display: block; }
+          header #navbar .row .menu ul li .open {
+            transform: rotate(180deg);
+            transition: transform 0.5s linear; }
       header #navbar .row .menu .log-in-book {
         display: flex;
         justify-content: center;
@@ -11411,8 +11412,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
+        flex-direction: row; }
         footer .column .footer-up .footer-menu .footer-company {
           display: flex;
           justify-content: center;
@@ -11465,7 +11465,8 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-          flex-direction: column; }
+          flex-direction: column;
+          align-items: flex-start; }
           footer .column .footer-up .footer-menu .footer-legal h5, footer .column .footer-up .footer-menu .footer-legal .h5 {
             color: #adaabf;
             font-size: 18px;
@@ -11502,6 +11503,9 @@ footer {
     footer .column .footer-down p {
       color: #adaabf;
       text-align: center; }
+
+ul, ol {
+  padding-left: 0rem !important; }
 
 main {
   display: flex;
@@ -11756,9 +11760,9 @@ main {
               color: whitesmoke; }
               main #cards-love .column .cards-love-workers .workers-img .worker .worker-name p {
                 font-size: 15px; }
-          main #cards-love .column .cards-love-workers .workers-img .active {
-            opacity: 1;
-            border-bottom: 2px solid #ff9a83; }
+            main #cards-love .column .cards-love-workers .workers-img .worker.active {
+              opacity: 1;
+              border-bottom: 2px solid #ff9a83; }
       main #cards-love .column .workers-comments {
         display: flex;
         justify-content: center;
@@ -11769,12 +11773,15 @@ main {
         background-color: whitesmoke;
         border-radius: 15px;
         padding: 80px 25px; }
-        main #cards-love .column .workers-comments .workers-comments-first {
+        main #cards-love .column .workers-comments .workers-comments-item {
           max-width: 65%;
           font-size: 24px;
           line-height: 170%;
           font-weight: 350;
-          text-align: center; }
+          text-align: center;
+          display: none; }
+        main #cards-love .column .workers-comments .active {
+          display: block; }
         main #cards-love .column .workers-comments p {
           color: #5b35d5;
           font-size: 20px; }
@@ -11810,17 +11817,24 @@ main {
       align-items: center;
       flex-direction: column;
       justify-content: space-around !important; }
+      main #global-section .column h3, main #global-section .column .h3 {
+        color: white; }
       main #global-section .column .global-card {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between !important; }
+        justify-content: space-between !important;
+        padding: 35px 0; }
         main #global-section .column .global-card .global-card-item {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column; }
+          main #global-section .column .global-card .global-card-item:nth-child(2) {
+            margin-left: 35px; }
+          main #global-section .column .global-card .global-card-item:nth-child(3) {
+            margin-left: 35px; }
           main #global-section .column .global-card .global-card-item .global-card-up {
             position: relative; }
             main #global-section .column .global-card .global-card-item .global-card-up img {
@@ -12084,9 +12098,9 @@ main#glbl {
           font-size: 45px;
           line-height: 55px;
           font-weight: 600;
-          transition-duration: 0.3s;
-          transition-timing-function: linear;
-          transition-delay: 0.1s; }
+          transform: translate3d(0px, 20px, 0px) scale3d(1, 1, 1);
+          opacity: 1;
+          transform-style: preserve-3d; }
         main#glbl #gl-empl-header .column .gl-empl-text p {
           color: #adaabf;
           font-size: 18px;
@@ -12368,7 +12382,7 @@ main#glbl {
   main#glbl #form-contact-us {
     width: 100%;
     height: max-content;
-    padding: 50px;
+    padding: 150px;
     background-color: #0f0d1e; }
     main#glbl #form-contact-us .row {
       display: flex;
@@ -12438,7 +12452,8 @@ main#glbl {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       main#glbl #help-decide .row .help-decide-head h1, main#glbl #help-decide .row .help-decide-head .h1 {
         font-family: Inter,sans-serif;
         color: #fff;
@@ -12458,7 +12473,79 @@ main#glbl {
             color: #fff;
             font-size: 22px;
             line-height: 30px;
-            font-weight: 400; }
+            font-weight: 400;
+            text-align: right; }
+  main#glbl #cards-love {
+    background-color: #5b35d5;
+    width: 100%;
+    height: max-content;
+    padding: 100px; }
+    main#glbl #cards-love .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      main#glbl #cards-love .column .cards-love-txt {
+        text-align: center; }
+        main#glbl #cards-love .column .cards-love-txt h2, main#glbl #cards-love .column .cards-love-txt .h2 {
+          color: whitesmoke; }
+      main#glbl #cards-love .column .cards-love-workers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: -1px 50px; }
+        main#glbl #cards-love .column .cards-love-workers .workers-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-around !important;
+          align-items: center; }
+          main#glbl #cards-love .column .cards-love-workers .workers-img .worker {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+            cursor: pointer;
+            padding: 15px;
+            background-color: transparent;
+            opacity: .64; }
+            main#glbl #cards-love .column .cards-love-workers .workers-img .worker img {
+              width: 70px;
+              height: 70px; }
+            main#glbl #cards-love .column .cards-love-workers .workers-img .worker .worker-name {
+              color: whitesmoke; }
+              main#glbl #cards-love .column .cards-love-workers .workers-img .worker .worker-name p {
+                font-size: 15px; }
+            main#glbl #cards-love .column .cards-love-workers .workers-img .worker.active {
+              opacity: 1;
+              border-bottom: 2px solid #ff9a83; }
+      main#glbl #cards-love .column .workers-comments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        padding: 80px 25px; }
+        main#glbl #cards-love .column .workers-comments .workers-comments-item {
+          max-width: 65%;
+          font-size: 24px;
+          line-height: 170%;
+          font-weight: 350;
+          text-align: center;
+          display: none; }
+        main#glbl #cards-love .column .workers-comments .active {
+          display: block; }
+        main#glbl #cards-love .column .workers-comments p {
+          color: #5b35d5;
+          font-size: 20px; }
 
 main#countries {
   width: 100%;

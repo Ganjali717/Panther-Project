@@ -37,9 +37,11 @@ header{
                         font-size: 1.1rem;
                         text-decoration: none;
                         text-align: center;
-                        .header-down-icon{
-                            display: block !important;
+                        img{
+                            width: 20px;
+                            height: 20px;
                         }
+                      
                     }
                     .dropdown-menu-header{
                         display: none;
@@ -64,14 +66,8 @@ header{
                                 }
                                 a{
                                     color: black;
-                                   
                                 }
-                                svg{
-                                    transition: all 0.5s linear;
-                                }
-                                svg.open{
-                                    transform: rotate(180deg);
-                                }
+                                
                             }
                         }
                     }
@@ -80,6 +76,7 @@ header{
                         ul{
                             @include flexbox;
                             position: absolute;
+                            z-index: -1;
                             flex-direction: column;
                             justify-content: flex-start;
                             align-items: flex-start;
@@ -110,6 +107,11 @@ header{
                     .active-dropdown{
                         display: block;
                     }
+                    .open{
+                        transform: rotate(180deg);
+                        transition: transform 0.5s linear;
+                    }
+                   
                 }
             }
 

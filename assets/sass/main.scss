@@ -13,7 +13,7 @@
 @import "../vendors/bootstrap-5.0.2/scss/list-group";
 
 // Colors 
-@import "../sass/variables/colors";
+@import "../sass/variables/colors"; 
 @import "../sass/variables/spacing";
 
 // Mixins
@@ -23,6 +23,9 @@
 // Components
 @import "../sass/components/header";
 @import "../sass/components/footer";
+
+//Helpers
+@import "../sass/helpers/reset";
 
 // Pages 
 @import "../sass/pages/homepage";
