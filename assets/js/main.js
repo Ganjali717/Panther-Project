@@ -4,15 +4,31 @@ let headresources = document.querySelector('#headresources');
 let dropdownmenu = document.querySelector('.dropdown-menu-header');
 let seconddropdownmenu = document.querySelector('.second-dropdown-menu-header');
 let dropdownicon = document.querySelector('.dropdown-icon');
+let dropdownicon2 = document.querySelector('.dropdown-icon-2');
 
-itworks.addEventListener('click', function(){ 
+itworks.addEventListener('click', function(e){ 
     dropdownmenu.classList.add("active-dropdown");
     dropdownicon.classList.add("open");
+    document.addEventListener('click', function(e){
+        if(e.target != itworks){
+            dropdownmenu.classList.remove("active-dropdown");
+            dropdownicon.classList.remove("open");
+        }
+    });
 });
-headresources.addEventListener('click', function(){ 
+headresources.addEventListener('click', function(e){ 
     seconddropdownmenu.classList.add("active-dropdown");
-    dropdownicon.classList.add("open");
+    dropdownicon2.classList.add("open");
+    document.addEventListener('click', function(e){
+        if(e.target != headresources){
+            seconddropdownmenu.classList.remove("active-dropdown");
+            dropdownicon2.classList.remove("open");
+        }
+    });
 });
+
+
+
 
 
 //Cards-love
@@ -35,6 +51,46 @@ workersimg.forEach(workersimg => {
         targetContent.classList.add('active');
     }
 });
+
+
+
+
+
+
+//Footer input 
+
+const inputfooter = document.querySelector('.footer-input');
+const formfooter = document.querySelector('.footer-form');
+const textError = document.querySelector('.text-error');
+const footsubmit = document.querySelector('.footer-submit');
+
+
+// inputfooter.addEventListener('input', (event) => {
+    
+
+
+
+//     if(includesNumber) {
+//         textError.classList.add('d-none');
+//     }else {
+//         textError.classList.remove('d-none');
+//     }
+// });
+
+
+formfooter.addEventListener('submit', function(e){
+    e.preventDefault();
+     if(inputfooter.value.length !== 0){
+        textError.classList.add('d-none');
+     }
+     else{
+        textError.classList.remove('d-none');
+     }
+});
+
+// formfooter.addEventListener('submit', function (event) {
+//     event.preventDefault();
+// });
 
 
 

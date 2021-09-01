@@ -11196,25 +11196,130 @@ textarea.form-control-lg {
     background-color: #141619;
     border-color: #141619; }
 
-@media only screen and (max-width: 992px) {
-  header .menu ul {
-    display: none !important; }
-  h1, .h1 {
-    font-size: 1.5rem; }
-  h2, .h2 {
-    font-size: 1rem; }
-  h3, .h3 {
-    font-size: 0.5rem; }
-  h4, .h4 {
-    font-size: 1rem; }
-  h5, .h5 {
-    font-size: 1rem; }
-  h6, .h6 {
-    font-size: 1rem; }
-  p,
-  li,
-  a {
-    font-size: 1rem; } }
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%; }
+  header #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background-color: #0f0d1e;
+    position: sticky;
+    overflow: visible; }
+    header #navbar .row {
+      flex-direction: row;
+      justify-content: space-between !important; }
+      header #navbar .row .logo {
+        padding: 15px; }
+      header #navbar .row .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative; }
+        header #navbar .row .menu ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          width: 80%;
+          padding: 15px; }
+          header #navbar .row .menu ul li {
+            padding: 15px 20px;
+            list-style: none;
+            border-radius: 5%;
+            cursor: pointer; }
+            header #navbar .row .menu ul li:hover {
+              background-color: #2d2c36; }
+            header #navbar .row .menu ul li a {
+              color: white;
+              font-size: 1.1rem;
+              text-decoration: none;
+              text-align: center; }
+              header #navbar .row .menu ul li a img {
+                width: 15px !important;
+                height: 15px !important; }
+            header #navbar .row .menu ul li .dropdown-menu-header {
+              display: none;
+              z-index: -1;
+              position: absolute;
+              top: 80px; }
+              header #navbar .row .menu ul li .dropdown-menu-header ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border-radius: 15px;
+                background-color: white !important; }
+                header #navbar .row .menu ul li .dropdown-menu-header ul li {
+                  list-style: none;
+                  cursor: pointer !important; }
+                  header #navbar .row .menu ul li .dropdown-menu-header ul li:hover {
+                    background-color: transparent !important; }
+                    header #navbar .row .menu ul li .dropdown-menu-header ul li:hover a {
+                      color: #c071c0; }
+                  header #navbar .row .menu ul li .dropdown-menu-header ul li a {
+                    color: black; }
+            header #navbar .row .menu ul li .second-dropdown-menu-header {
+              top: 80px;
+              z-index: -1;
+              display: none;
+              position: absolute; }
+              header #navbar .row .menu ul li .second-dropdown-menu-header ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                border-radius: 15px;
+                background-color: white !important; }
+                header #navbar .row .menu ul li .second-dropdown-menu-header ul li {
+                  list-style: none;
+                  cursor: pointer !important; }
+                  header #navbar .row .menu ul li .second-dropdown-menu-header ul li:hover {
+                    background-color: transparent !important; }
+                    header #navbar .row .menu ul li .second-dropdown-menu-header ul li:hover a {
+                      color: #c071c0; }
+                  header #navbar .row .menu ul li .second-dropdown-menu-header ul li a {
+                    color: black; }
+                  header #navbar .row .menu ul li .second-dropdown-menu-header ul li .open {
+                    transition: all 0.5s linear;
+                    transform: rotate(180deg); }
+            header #navbar .row .menu ul li .active-dropdown {
+              display: block; }
+            header #navbar .row .menu ul li .open {
+              transform: rotate(180deg);
+              transition: transform 0.5s linear; }
+        header #navbar .row .menu .log-in-book {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          width: 27%;
+          justify-content: space-between !important; }
+          header #navbar .row .menu .log-in-book #log-in-btn {
+            padding: 12px 17px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #5b35d5;
+            border-radius: 5px; }
+            header #navbar .row .menu .log-in-book #log-in-btn:hover {
+              background-color: #77779c; }
+          header #navbar .row .menu .log-in-book #book-btn {
+            background-color: #5b35d5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none; }
+            header #navbar .row .menu .log-in-book #book-btn:hover {
+              background-color: #3d7aeb; }
 
 @media only screen and (min-width: 992px) {
   header svg {
@@ -11222,172 +11327,13 @@ textarea.form-control-lg {
     float: right;
     color: white; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1405px) {
   header .menu {
     justify-content: flex-end !important; }
   header .menu ul, header .log-in-book {
     display: none !important; }
   header svg {
-    display: block !important; }
-  #call-to-action .call-platform {
-    justify-content: center !important;
-    flex-direction: column !important; }
-    #call-to-action .call-platform img {
-      width: 300px !important;
-      height: 300px !important; }
-  #global-section .global-card {
-    flex-direction: column !important; }
-    #global-section .global-card .global-card-item {
-      padding-top: 25px; }
-  #feature-section .main-feature {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center !important; }
-    #feature-section .main-feature .main-feature-text a {
-      padding: 10px !important; }
-      #feature-section .main-feature .main-feature-text a svg {
-        width: 20px !important;
-        height: 20px !important; }
-    #feature-section .main-feature .main-feature-image {
-      margin-top: 80px;
-      margin-left: -146px; }
-      #feature-section .main-feature .main-feature-image img {
-        width: 400px !important;
-        height: 300px !important; }
-  footer .footer-up {
-    flex-direction: column !important; }
-    footer .footer-up .footer-menu {
-      flex-direction: column !important; } }
-
-@media only screen and (max-width: 768px) {
-  /* For phones */
-  #call-to-action .call-platform {
-    justify-content: center !important;
-    flex-direction: column !important; }
-    #call-to-action .call-platform img {
-      width: 250px !important;
-      height: 250px !important; } }
-
-header #navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: max-content;
-  background-color: #0f0d1e;
-  position: sticky;
-  overflow: visible; }
-  header #navbar .row {
-    flex-direction: row;
-    justify-content: space-between !important; }
-    header #navbar .row .logo {
-      padding: 15px; }
-    header #navbar .row .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row; }
-      header #navbar .row .menu ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        position: relative;
-        width: 80%;
-        padding: 15px; }
-        header #navbar .row .menu ul li {
-          padding: 15px 20px;
-          list-style: none;
-          border-radius: 5%;
-          cursor: pointer; }
-          header #navbar .row .menu ul li:hover {
-            background-color: #2d2c36; }
-          header #navbar .row .menu ul li a {
-            color: white;
-            font-size: 1.1rem;
-            text-decoration: none;
-            text-align: center; }
-            header #navbar .row .menu ul li a img {
-              width: 20px;
-              height: 20px; }
-          header #navbar .row .menu ul li .dropdown-menu-header {
-            display: none; }
-            header #navbar .row .menu ul li .dropdown-menu-header ul {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: absolute;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              width: 40%;
-              top: 80px;
-              border-radius: 15px;
-              background-color: white !important; }
-              header #navbar .row .menu ul li .dropdown-menu-header ul li {
-                list-style: none;
-                cursor: pointer !important; }
-                header #navbar .row .menu ul li .dropdown-menu-header ul li:hover {
-                  background-color: transparent !important; }
-                  header #navbar .row .menu ul li .dropdown-menu-header ul li:hover a {
-                    color: #c071c0; }
-                header #navbar .row .menu ul li .dropdown-menu-header ul li a {
-                  color: black; }
-          header #navbar .row .menu ul li .second-dropdown-menu-header {
-            display: none; }
-            header #navbar .row .menu ul li .second-dropdown-menu-header ul {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: absolute;
-              z-index: -1;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              width: 40%;
-              top: 80px;
-              border-radius: 15px;
-              background-color: white !important; }
-              header #navbar .row .menu ul li .second-dropdown-menu-header ul li {
-                list-style: none;
-                cursor: pointer !important; }
-                header #navbar .row .menu ul li .second-dropdown-menu-header ul li:hover {
-                  background-color: transparent !important; }
-                  header #navbar .row .menu ul li .second-dropdown-menu-header ul li:hover a {
-                    color: #c071c0; }
-                header #navbar .row .menu ul li .second-dropdown-menu-header ul li a {
-                  color: black; }
-                header #navbar .row .menu ul li .second-dropdown-menu-header ul li .open {
-                  transition: all 0.5s linear;
-                  transform: rotate(180deg); }
-          header #navbar .row .menu ul li .active-dropdown {
-            display: block; }
-          header #navbar .row .menu ul li .open {
-            transform: rotate(180deg);
-            transition: transform 0.5s linear; }
-      header #navbar .row .menu .log-in-book {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 27%;
-        justify-content: space-between !important; }
-        header #navbar .row .menu .log-in-book #log-in-btn {
-          padding: 12px 17px;
-          text-decoration: none;
-          color: white;
-          border: 1px solid #5b35d5;
-          border-radius: 5px; }
-          header #navbar .row .menu .log-in-book #log-in-btn:hover {
-            background-color: #77779c; }
-        header #navbar .row .menu .log-in-book #book-btn {
-          background-color: #5b35d5;
-          color: white;
-          padding: 12px 25px;
-          border-radius: 5px;
-          text-decoration: none; }
-          header #navbar .row .menu .log-in-book #book-btn:hover {
-            background-color: #3d7aeb; }
+    display: block !important; } }
 
 footer {
   width: 100%;
@@ -11486,6 +11432,15 @@ footer {
               footer .column .footer-up .footer-menu .footer-legal ul li a {
                 text-decoration: none;
                 color: whitesmoke; }
+      footer .column .footer-up .subscribe form input[type="submit"] {
+        background-color: #4d4db9;
+        color: white;
+        width: 100px; }
+      footer .column .footer-up .subscribe form .d-none {
+        display: none; }
+      footer .column .footer-up .subscribe form .error {
+        color: #cc4242;
+        font-size: 1rem; }
       footer .column .footer-up .subscribe h5, footer .column .footer-up .subscribe .h5 {
         color: #adaabf; }
       footer .column .footer-up .subscribe p {
@@ -11504,6 +11459,32 @@ footer {
       color: #adaabf;
       text-align: center; }
 
+@media only screen and (max-width: 1100px) {
+  footer .column .footer-up {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    footer .column .footer-up .footer-menu {
+      width: 50%;
+      flex-direction: column;
+      align-items: flex-start; }
+      footer .column .footer-up .footer-menu .footer-company {
+        width: 100%; }
+      footer .column .footer-up .footer-menu .footer-resources {
+        width: 100%; }
+      footer .column .footer-up .footer-menu .footer-legal {
+        width: 100%; }
+    footer .column .footer-up .subscribe {
+      width: 50%; } }
+
+@media only screen and (max-width: 700px) {
+  footer .column .footer-up {
+    flex-direction: column; }
+    footer .column .footer-up .footer-menu {
+      width: 100%; }
+    footer .column .footer-up .subscribe {
+      width: 100%; } }
+
 ul, ol {
   padding-left: 0rem !important; }
 
@@ -11517,75 +11498,111 @@ main {
   main #payroll {
     width: 100%;
     height: max-content;
-    background-color: #0f0d1e; }
+    background-color: #0f0d1e;
+    padding-top: 25px; }
     main #payroll .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      padding: 120px 0;
-      justify-content: space-between !important; }
-      main #payroll .row .payroll-text .payroll-first-text h1, main #payroll .row .payroll-text .payroll-first-text .h1 {
-        letter-spacing: 1px;
-        color: white; }
-      main #payroll .row .payroll-text .payroll-first-text p {
-        padding: 15px 0;
-        color: #adaabf; }
-      main #payroll .row .payroll-text .payroll-first-text a {
-        color: white;
-        text-decoration: none;
-        padding: 15px 25px;
-        border-radius: 5%;
-        background-color: #5b35d5; }
-      main #payroll .row .payroll-text .payroll-second-text {
-        padding: 90px 10px; }
-        main #payroll .row .payroll-text .payroll-second-text i {
-          color: whitesmoke; }
-        main #payroll .row .payroll-text .payroll-second-text img {
-          width: 80px;
-          height: 50px;
-          margin-right: 10px; }
+      justify-content: space-between;
+      padding: 100px 0; }
+      main #payroll .row .payroll-text {
+        width: 50%; }
+        main #payroll .row .payroll-text .payroll-first-text h1, main #payroll .row .payroll-text .payroll-first-text .h1 {
+          letter-spacing: 1px;
+          color: white; }
+        main #payroll .row .payroll-text .payroll-first-text p {
+          padding: 15px 0;
+          color: #adaabf; }
+        main #payroll .row .payroll-text .payroll-first-text a {
+          color: white;
+          text-decoration: none;
+          padding: 15px 25px;
+          border-radius: 5%;
+          background-color: #5b35d5; }
+        main #payroll .row .payroll-text .payroll-second-text {
+          padding: 90px 0; }
+          main #payroll .row .payroll-text .payroll-second-text i {
+            color: whitesmoke; }
+          main #payroll .row .payroll-text .payroll-second-text img {
+            width: 80px;
+            height: 50px;
+            margin-right: 10px; }
       main #payroll .row .payroll-logo-image {
+        width: 50%;
         position: relative; }
-        main #payroll .row .payroll-logo-image img {
-          width: 100%;
-          height: 80%; }
+        main #payroll .row .payroll-logo-image img#payroll-image {
+          width: 700px; }
         main #payroll .row .payroll-logo-image .link-watch-video {
           position: absolute;
           width: 80px;
           height: 80px;
           left: 300px;
-          top: 200px !important;
+          top: 220px;
           text-align: center;
+          cursor: pointer;
           margin: 0 auto;
           background-color: rgba(134, 125, 243, 0.88);
           border-radius: 50%; }
-          main #payroll .row .payroll-logo-image .link-watch-video img {
+          main #payroll .row .payroll-logo-image .link-watch-video a img#play-video {
             position: absolute;
             top: 22px;
             left: 22px;
-            width: 35px;
-            height: 35px;
+            width: 50px !important;
+            height: 50px !important;
             display: inline-block;
-            max-width: 100%;
             border: 1px transparent;
             border-radius: 16px; }
+        main #payroll .row .payroll-logo-image .video-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 99999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.5s; }
+          main #payroll .row .payroll-logo-image .video-container .close {
+            position: absolute;
+            top: 10%;
+            right: 25px;
+            font-size: 25px;
+            cursor: pointer;
+            font-size: 25px;
+            cursor: pointer; }
+          main #payroll .row .payroll-logo-image .video-container video {
+            width: 90%;
+            max-width: 800px;
+            transform: scale(0);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            outline: none;
+            transition: all 0.5s; }
+        main #payroll .row .payroll-logo-image .show {
+          pointer-events: all;
+          opacity: 1; }
+        main #payroll .row .payroll-logo-image .show video {
+          transform: scale(1); }
   main #call-to-action {
     width: 100%;
     height: max-content;
     background-color: #1b1734;
-    padding: 50px; }
+    padding: 50px 0 !important; }
     main #call-to-action .row {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column !important; }
+      flex-direction: column; }
       main #call-to-action .row .call-text {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between !important;
+        justify-content: space-between;
         padding: 70px; }
         main #call-to-action .row .call-text h2, main #call-to-action .row .call-text .h2 {
           color: white; }
@@ -11618,8 +11635,8 @@ main {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      justify-content: space-between !important;
-      align-items: center !important; }
+      justify-content: flex-start;
+      align-items: center; }
       main #feature-section .column .main-feature {
         display: flex;
         justify-content: center;
@@ -11718,7 +11735,7 @@ main {
     background-color: #5b35d5;
     width: 100%;
     height: max-content;
-    padding: 100px; }
+    padding: 50px 0; }
     main #cards-love .column {
       display: flex;
       justify-content: center;
@@ -11785,26 +11802,26 @@ main {
         main #cards-love .column .workers-comments p {
           color: #5b35d5;
           font-size: 20px; }
-  main #call-to-action {
+  main #home-book {
     background-color: #0f0d1e;
     width: 100%;
     height: max-content;
-    padding: 160px; }
-    main #call-to-action .column {
+    padding: 50px 0; }
+    main #home-book .column {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      main #call-to-action .column .action-head {
+      main #home-book .column .action-head {
         font-size: 40px;
         color: whitesmoke;
         font-weight: 500;
         text-align: center;
         max-width: 80%; }
-      main #call-to-action .column a {
+      main #home-book .column a {
         border-radius: 4px;
         background-color: #5b35d5;
-        padding: 20px 30px;
+        padding: 20px 20px;
         text-decoration: none;
         color: whitesmoke; }
   main #global-section {
@@ -11880,6 +11897,179 @@ main {
         padding: 15px 30px;
         color: whitesmoke;
         text-decoration: none; }
+
+@media only screen and (max-width: 1400px) {
+  main #payroll .row .payroll-logo-image img#payroll-image {
+    width: 490px; }
+  main #feature-section .column .main-feature {
+    flex-direction: column; }
+    main #feature-section .column .main-feature .main-feature-image {
+      margin-top: 25px; }
+  main #global-section .column .global-card {
+    flex-direction: column; }
+    main #global-section .column .global-card .global-card-item {
+      width: 80%;
+      margin-top: 25px; } }
+
+@media only screen and (max-width: 992px) {
+  main #payroll .row {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important; }
+    main #payroll .row .payroll-text {
+      width: 100% !important; }
+      main #payroll .row .payroll-text h1, main #payroll .row .payroll-text .h1 {
+        font-size: 42px; }
+      main #payroll .row .payroll-text p {
+        font-size: 18px !important;
+        font-weight: 300 !important;
+        color: #adaabf;
+        font-family: Inter,sans-serif; }
+    main #payroll .row .payroll-logo-image {
+      width: 100% !important; }
+      main #payroll .row .payroll-logo-image img#payroll-image {
+        width: 600px; }
+  main #call-to-action .call-text h2, main #call-to-action .call-text .h2 {
+    font-size: 34px;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: Inter,sans-serif; }
+  main #call-to-action .call-text p {
+    font-family: Inter,sans-serif;
+    line-height: 150%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300; }
+  main #call-to-action .call-platform {
+    justify-content: center !important;
+    flex-direction: column !important; }
+    main #call-to-action .call-platform .call-platform-text {
+      width: 100% !important; }
+      main #call-to-action .call-platform .call-platform-text h2, main #call-to-action .call-platform .call-platform-text .h2 {
+        font-size: 32px;
+        line-height: 140%; }
+    main #call-to-action .call-platform img {
+      width: 300px !important;
+      height: 300px !important; }
+  main #feature-section .main-feature {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center !important; }
+    main #feature-section .main-feature .main-feature-text a {
+      padding: 10px !important; }
+      main #feature-section .main-feature .main-feature-text a svg {
+        width: 20px !important;
+        height: 20px !important; }
+    main #feature-section .main-feature .main-feature-image {
+      margin-top: 80px; }
+      main #feature-section .main-feature .main-feature-image img {
+        width: 400px !important;
+        height: 300px !important; }
+  main #cards-love .cards-love-workers .workers-img .worker {
+    flex-direction: column !important; } }
+
+@media only screen and (max-width: 768px) {
+  main #payroll .row {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important; }
+    main #payroll .row .payroll-text {
+      width: 100% !important; }
+      main #payroll .row .payroll-text h1, main #payroll .row .payroll-text .h1 {
+        font-size: 42px; }
+      main #payroll .row .payroll-text p {
+        font-size: 18px !important;
+        font-weight: 300 !important;
+        color: #adaabf;
+        font-family: Inter,sans-serif; }
+    main #payroll .row .payroll-logo-image {
+      width: 100% !important; }
+      main #payroll .row .payroll-logo-image img#payroll-image {
+        width: 500px; }
+  main #global-section .column .global-card .global-card-item {
+    margin-left: 0 !important; } }
+
+@media only screen and (max-width: 600px) {
+  main #call-to-action .row .call-platform {
+    width: 80%;
+    align-items: center; }
+  main #feature-section {
+    padding: 25px 5px; }
+    main #feature-section .column .main-feature {
+      width: 100%;
+      padding: 25px 35px; }
+      main #feature-section .column .main-feature .main-feature-image {
+        padding-top: 15px; }
+        main #feature-section .column .main-feature .main-feature-image img {
+          width: 320px !important; }
+  main #cards-section .column .cards-heading {
+    width: 100%; }
+    main #cards-section .column .cards-heading h2, main #cards-section .column .cards-heading .h2 {
+      font-size: 50px;
+      text-align: left; }
+  main #cards-section .column .cards {
+    flex-direction: column; }
+    main #cards-section .column .cards .cards-list {
+      width: 100%; }
+      main #cards-section .column .cards .cards-list h4, main #cards-section .column .cards .cards-list .h4 {
+        font-family: Inter,sans-serif;
+        color: #fff;
+        font-size: 30px;
+        line-height: 150%;
+        font-weight: 500;
+        text-align: left; }
+      main #cards-section .column .cards .cards-list p {
+        color: #adaabf;
+        font-size: 30px; }
+  main #global-section .column .global-card .global-card-item {
+    margin-left: 0 !important; } }
+
+@media only screen and (max-width: 500px) {
+  main #payroll .row .payroll-logo-image {
+    width: 100% !important; }
+    main #payroll .row .payroll-logo-image img#payroll-image {
+      width: 350px; }
+    main #payroll .row .payroll-logo-image .link-watch-video {
+      left: 110px !important;
+      top: 90px !important; }
+  main #global-section .column .global-card .global-card-item {
+    margin-left: 0 !important; }
+  main #call-to-action .row .call-text {
+    flex-direction: column;
+    width: 100%; }
+    main #call-to-action .row .call-text h2, main #call-to-action .row .call-text .h2 {
+      width: 100%; }
+    main #call-to-action .row .call-text p {
+      width: 100%; }
+  main #cars-section .column .cards .cards-list {
+    width: 100%; }
+    main #cars-section .column .cards .cards-list h4, main #cars-section .column .cards .cards-list .h4 {
+      width: 100% !important; }
+    main #cars-section .column .cards .cards-list p {
+      width: 100% !important; } }
+
+@media only screen and (max-width: 400px) {
+  main #payroll .row .payroll-logo-image {
+    width: 100% !important; }
+    main #payroll .row .payroll-logo-image img#payroll-image {
+      width: 300px; }
+    main #payroll .row .payroll-logo-image .link-watch-video {
+      left: 110px !important;
+      top: 90px !important; }
+  main #global-section .column .global-card .global-card-item {
+    margin-left: 0 !important; }
+    main #global-section .column .global-card .global-card-item .global-card-up img {
+      width: 300px; }
+    main #global-section .column .global-card .global-card-item .global-card-down {
+      width: 350px; }
+  main #call-to-action .row .call-platform-text {
+    width: 100%; }
+  main #call-to-action .row .call-platform-image {
+    width: 100%; }
+    main #call-to-action .row .call-platform-image img {
+      width: 200px !important;
+      height: 150px;
+      margin-right: 25px; } }
 
 main#blog-main {
   width: 100%;
@@ -11987,7 +12177,7 @@ main {
   main #empl-ret-str {
     width: 100%;
     height: max-content;
-    padding: 50px;
+    padding-top: 100px;
     background-color: #ebeaf5; }
     main #empl-ret-str .column {
       display: flex;
@@ -12028,7 +12218,7 @@ main {
   main #empl-ret-str-second {
     width: 100%;
     height: max-content;
-    padding: 50px; }
+    padding: 30px 0; }
     main #empl-ret-str-second .column {
       display: flex;
       justify-content: center;
@@ -12067,6 +12257,16 @@ main {
       main #empl-ret-str-second .column .empl-body-text b {
         font-weight: 500;
         font-size: 18px; }
+
+@media only screen and (max-width: 992px) {
+  #empl-ret-str .empl-head h1, #empl-ret-str .empl-head .h1 {
+    font-size: 48px !important;
+    font-weight: 100 !important; }
+  #empl-ret-str .empl-head img {
+    width: 400px !important;
+    height: 400px !important; }
+  #empl-ret-str-second .column .empl-body-text {
+    width: 90% !important; } }
 
 main#glbl {
   display: flex;
@@ -12210,7 +12410,7 @@ main#glbl {
           color: white;
           border-radius: 5px;
           background-color: #322b5f; }
-      main#glbl #feature-section .column .ftr-card {
+      main#glbl #feature-section .column .ftr-card .ftr-card-item {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12218,33 +12418,36 @@ main#glbl {
         justify-content: space-between;
         border-radius: 16px;
         background-color: #1b1734;
-        padding: 55px 45px; }
-        main#glbl #feature-section .column .ftr-card .ftr-card-txt {
+        padding: 55px 45px;
+        display: none; }
+        main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-txt {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           justify-content: space-between;
           align-items: flex-start; }
-          main#glbl #feature-section .column .ftr-card .ftr-card-txt h5, main#glbl #feature-section .column .ftr-card .ftr-card-txt .h5 {
+          main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-txt h5, main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-txt .h5 {
             color: #fff;
             font-size: 22px;
             line-height: 30px;
             font-weight: 400; }
-          main#glbl #feature-section .column .ftr-card .ftr-card-txt p {
+          main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-txt p {
             color: white;
             font-size: 18px;
             line-height: 24px;
             font-weight: 300; }
-          main#glbl #feature-section .column .ftr-card .ftr-card-txt a {
+          main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-txt a {
             color: white;
             font-size: 16px;
             text-decoration: none;
             border-bottom: 1px solid #fff; }
-        main#glbl #feature-section .column .ftr-card .ftr-card-img img {
+        main#glbl #feature-section .column .ftr-card .ftr-card-item .ftr-card-img img {
           width: 480px;
           height: 320px;
           border-radius: 10px; }
+        main#glbl #feature-section .column .ftr-card .ftr-card-item.show-ftr {
+          display: flex; }
   main#glbl #benefits {
     width: 100%;
     height: max-content;
@@ -12453,7 +12656,7 @@ main#glbl {
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; }
+      align-items: flex-start; }
       main#glbl #help-decide .row .help-decide-head h1, main#glbl #help-decide .row .help-decide-head .h1 {
         font-family: Inter,sans-serif;
         color: #fff;
@@ -12468,6 +12671,7 @@ main#glbl {
         justify-content: space-between;
         align-items: flex-start; }
         main#glbl #help-decide .row .help-decide-quest .quest {
+          cursor: pointer;
           padding: 15px; }
           main#glbl #help-decide .row .help-decide-quest .quest h4, main#glbl #help-decide .row .help-decide-quest .quest .h4 {
             color: #fff;
@@ -12475,6 +12679,51 @@ main#glbl {
             line-height: 30px;
             font-weight: 400;
             text-align: right; }
+          main#glbl #help-decide .row .help-decide-quest .quest .questopen {
+            transition: all 0.5s linear;
+            transform: rotate(90deg); }
+        main#glbl #help-decide .row .help-decide-quest .quest-text {
+          height: 0;
+          overflow: hidden;
+          transition: height 0.5s ease; }
+          main#glbl #help-decide .row .help-decide-quest .quest-text p {
+            max-width: 80%;
+            font-family: Inter,sans-serif;
+            color: #adaabf;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 300; }
+          main#glbl #help-decide .row .help-decide-quest .quest-text form {
+            background-color: white;
+            width: 85%;
+            padding: 25px;
+            border-radius: 10px; }
+            main#glbl #help-decide .row .help-decide-quest .quest-text form h4, main#glbl #help-decide .row .help-decide-quest .quest-text form .h4 {
+              text-align: center;
+              font-size: 22px;
+              line-height: 30px;
+              font-weight: 400;
+              color: #0f0d1e; }
+            main#glbl #help-decide .row .help-decide-quest .quest-text form input {
+              width: 100%;
+              padding: 10px;
+              border-radius: 5px;
+              border: 1px solid rgba(0, 0, 0, 0.103); }
+            main#glbl #help-decide .row .help-decide-quest .quest-text form input[type="submit"] {
+              padding: 15px 25px;
+              background-color: #5b35d5;
+              color: white; }
+            main#glbl #help-decide .row .help-decide-quest .quest-text form #check-label {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-around; }
+              main#glbl #help-decide .row .help-decide-quest .quest-text form #check-label input[type="checkbox"] {
+                width: 50px; }
+        main#glbl #help-decide .row .help-decide-quest .active {
+          height: max-content; }
   main#glbl #cards-love {
     background-color: #5b35d5;
     width: 100%;
@@ -12649,15 +12898,48 @@ main#countries {
             width: 30px;
             height: 30px;
             cursor: pointer; }
+          main#countries #countries-build .column .countries-build-first .built-first-play .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s; }
+            main#countries #countries-build .column .countries-build-first .built-first-play .video-container .close {
+              position: absolute;
+              top: 10%;
+              right: 25px;
+              font-size: 25px;
+              cursor: pointer;
+              font-size: 25px;
+              cursor: pointer; }
+            main#countries #countries-build .column .countries-build-first .built-first-play .video-container video {
+              width: 90%;
+              max-width: 800px;
+              transform: scale(0);
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+              outline: none;
+              transition: all 0.5s; }
+          main#countries #countries-build .column .countries-build-first .built-first-play .show {
+            pointer-events: all;
+            opacity: 1; }
+          main#countries #countries-build .column .countries-build-first .built-first-play .show video {
+            transform: scale(1); }
       main#countries #countries-build .column .countries-build-second {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between !important; }
-        main#countries #countries-build .column .countries-build-second .build-second-cards img {
-          width: 40px;
-          height: 40px; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards > img {
+          width: 45px;
+          height: 45px; }
         main#countries #countries-build .column .countries-build-second .build-second-cards h5, main#countries #countries-build .column .countries-build-second .build-second-cards .h5 {
           font-family: Inter,sans-serif;
           font-size: 20px;
@@ -12671,6 +12953,13 @@ main#countries {
           line-height: 150%;
           font-weight: 400;
           text-decoration: none; }
+        main#countries #countries-build .column .countries-build-second .build-second-cards img#cntr-icon {
+          width: 15px;
+          height: 15px; }
+
+@media only screen and (max-width: 992px) {
+  main#countries #countries-header .row .cntr-hd-right img {
+    width: 450px; } }
 
 main#glbl-payroll {
   width: 100%;
@@ -12708,24 +12997,32 @@ main#glbl-payroll {
     width: 100%;
     height: max-content;
     background-color: #1b1734;
-    padding: 150px; }
-    main#glbl-payroll #glbl-payroll-cards .row .payroll-cards {
-      background-color: #0f0d1e;
-      border-radius: 10px;
-      padding: 30px;
-      height: min-content; }
-      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards img {
-        width: 30px;
-        height: 30px; }
-      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards h4, main#glbl-payroll #glbl-payroll-cards .row .payroll-cards .h4 {
-        color: white;
-        font-family: Inter,sans-serif;
-        font-size: 24px;
-        line-height: 150%;
-        font-weight: 500; }
-      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards p {
-        color: #adaabf;
-        font-size: 20px; }
+    padding: 150px 0; }
+    main#glbl-payroll #glbl-payroll-cards .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; }
+      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards {
+        background-color: #0f0d1e;
+        border-radius: 10px;
+        padding: 40px;
+        margin-top: 25px;
+        margin-left: 15px;
+        height: 330px; }
+        main#glbl-payroll #glbl-payroll-cards .row .payroll-cards img {
+          width: 45px;
+          height: 45px; }
+        main#glbl-payroll #glbl-payroll-cards .row .payroll-cards h4, main#glbl-payroll #glbl-payroll-cards .row .payroll-cards .h4 {
+          color: white;
+          font-family: Inter,sans-serif;
+          font-size: 24px;
+          line-height: 150%;
+          font-weight: 500; }
+        main#glbl-payroll #glbl-payroll-cards .row .payroll-cards p {
+          color: #adaabf;
+          font-size: 20px; }
   main#glbl-payroll #glbl-payroll-book {
     width: 100%;
     height: max-content;
@@ -12759,92 +13056,223 @@ main#glbl-payroll {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: flex-start; }
       main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-left h1, main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-left .h1 {
         color: white;
         font-family: Inter,sans-serif; }
-      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start; }
-        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right ul li {
-          list-style: none;
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .faq-question {
+        cursor: pointer; }
+        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .faq-question h5, main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .faq-question .h5 {
+          margin-top: 8px;
+          padding-right: 24px;
           color: #fff;
           font-size: 20px;
           line-height: 150%;
-          font-weight: 400;
-          padding: 25px; }
-      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right p {
+          font-weight: 400; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .faq-answers {
+        display: none; }
+        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .faq-answers p {
+          max-width: 80%;
+          font-family: Inter,sans-serif;
+          color: #adaabf;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 300; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right .active {
+        display: block; }
+      main#glbl-payroll #glbl-payroll-questions .row p {
         color: #adaabf;
         font-size: 20px; }
-        main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right p a {
+        main#glbl-payroll #glbl-payroll-questions .row p a {
           text-decoration: none; }
-  main#glbl-payroll #glbl-payroll-build {
-    width: 100%;
-    height: max-content;
-    background-color: #0f0d1e;
-    padding: 150px; }
-    main#glbl-payroll #glbl-payroll-build .column {
+
+#glbl-payroll-build {
+  width: 100%;
+  height: max-content;
+  background-color: #0f0d1e;
+  padding: 150px 0; }
+  #glbl-payroll-build .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; }
+    #glbl-payroll-build .column .payroll-build-first {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      justify-content: space-between; }
-      main#glbl-payroll #glbl-payroll-build .column .payroll-build-first {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-first h1, main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .h1 {
-          color: white;
-          line-height: 140%;
-          font-weight: 600;
-          font-family: Inter,sans-serif;
-          font-size: 33px; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center; }
-          main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play p {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 300;
-            padding-top: 10px; }
-          main#glbl-payroll #glbl-payroll-build .column .payroll-build-first .built-first-play img {
-            width: 30px;
-            height: 30px;
-            cursor: pointer; }
-      main#glbl-payroll #glbl-payroll-build .column .payroll-build-second {
+      justify-content: space-between;
+      align-items: flex-start; }
+      #glbl-payroll-build .column .payroll-build-first h1, #glbl-payroll-build .column .payroll-build-first .h1 {
+        color: white;
+        line-height: 140%;
+        font-weight: 600;
+        font-family: Inter,sans-serif;
+        font-size: 33px; }
+      #glbl-payroll-build .column .payroll-build-first .built-first-play {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between !important; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards img {
-          width: 40px;
-          height: 40px; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards h5, main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards .h5 {
-          font-family: Inter,sans-serif;
-          font-size: 20px;
-          font-weight: 500;
-          color: white; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards p {
-          color: #adaabf; }
-        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards a {
-          color: #867df3;
-          font-size: 16px;
-          line-height: 150%;
-          font-weight: 400;
-          text-decoration: none; }
+        justify-content: flex-start;
+        align-items: center; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play p {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 300;
+          padding-top: 10px; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play .link-watch-video {
+          text-align: center;
+          margin: 0 auto;
+          background-color: rgba(134, 125, 243, 0.88);
+          border-radius: 50%; }
+          #glbl-payroll-build .column .payroll-build-first .built-first-play .link-watch-video a img#play-video {
+            position: absolute;
+            top: 22px;
+            left: 22px;
+            width: 50px !important;
+            height: 50px !important;
+            display: inline-block;
+            border: 1px transparent;
+            border-radius: 16px; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play .video-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 99999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.5s; }
+          #glbl-payroll-build .column .payroll-build-first .built-first-play .video-container .close {
+            position: absolute;
+            top: 10%;
+            right: 25px;
+            font-size: 25px;
+            cursor: pointer;
+            font-size: 25px;
+            cursor: pointer; }
+          #glbl-payroll-build .column .payroll-build-first .built-first-play .video-container video {
+            width: 90%;
+            max-width: 800px;
+            transform: scale(0);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            outline: none;
+            transition: all 0.5s; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play .show {
+          pointer-events: all;
+          opacity: 1; }
+        #glbl-payroll-build .column .payroll-build-first .built-first-play .show video {
+          transform: scale(1); }
+    #glbl-payroll-build .column .payroll-build-second {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between !important; }
+      #glbl-payroll-build .column .payroll-build-second .build-second-cards > img {
+        width: 45px;
+        height: 45px; }
+      #glbl-payroll-build .column .payroll-build-second .build-second-cards h5, #glbl-payroll-build .column .payroll-build-second .build-second-cards .h5 {
+        font-family: Inter,sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white; }
+      #glbl-payroll-build .column .payroll-build-second .build-second-cards p {
+        color: #adaabf; }
+      #glbl-payroll-build .column .payroll-build-second .build-second-cards a {
+        color: #867df3;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400;
+        text-decoration: none; }
+      #glbl-payroll-build .column .payroll-build-second .build-second-cards img#build-cards-icon {
+        width: 15px !important;
+        height: 15px !important; }
+
+@media only screen and (max-width: 1200px) {
+  main#glbl-payroll #glbl-payroll-header .row {
+    flex-direction: column !important; }
+    main#glbl-payroll #glbl-payroll-header .row .payroll-header-left {
+      width: 100%; }
+    main#glbl-payroll #glbl-payroll-header .row .payroll-header-right {
+      width: 100%; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-right img {
+        width: 500px; } }
+
+@media only screen and (max-width: 992px) {
+  main#glbl-payroll #glbl-payroll-questions {
+    padding: 60px 0; }
+    main#glbl-payroll #glbl-payroll-questions .row {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-left {
+        width: 100%; }
+      main#glbl-payroll #glbl-payroll-questions .row .payroll-faq-right {
+        width: 100%; } }
+
+@media only screen and (max-width: 700px) {
+  main#glbl-payroll #glbl-payroll-header .row {
+    flex-direction: column !important; }
+    main#glbl-payroll #glbl-payroll-header .row .payroll-header-left {
+      width: 100%; }
+    main#glbl-payroll #glbl-payroll-header .row .payroll-header-right {
+      width: 100%; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-right img {
+        width: 400px;
+        height: 300px; }
+  main#glbl-payroll #glbl-payroll-build {
+    padding: 100px 0; }
+    main#glbl-payroll #glbl-payroll-build .column {
+      width: 100%; }
+      main#glbl-payroll #glbl-payroll-build .column .payroll-build-first {
+        width: 100%; }
+      main#glbl-payroll #glbl-payroll-build .column .payroll-build-second {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; }
+        main#glbl-payroll #glbl-payroll-build .column .payroll-build-second .build-second-cards {
+          width: 100%; } }
+
+@media only screen and (max-width: 500px) {
+  main#glbl-payroll #glbl-payroll-header {
+    padding: 250px 0; }
+    main#glbl-payroll #glbl-payroll-header .row {
+      flex-direction: column !important; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-left {
+        width: 100%; }
+        main#glbl-payroll #glbl-payroll-header .row .payroll-header-left h1, main#glbl-payroll #glbl-payroll-header .row .payroll-header-left .h1 {
+          width: 100%; }
+        main#glbl-payroll #glbl-payroll-header .row .payroll-header-left a {
+          width: 100%; }
+      main#glbl-payroll #glbl-payroll-header .row .payroll-header-right {
+        width: 100%; }
+        main#glbl-payroll #glbl-payroll-header .row .payroll-header-right img {
+          width: 300px; }
+  main#glbl-payroll #glbl-payroll-cards {
+    padding: 50px 5px; }
+    main#glbl-payroll #glbl-payroll-cards .row {
+      width: 100%; }
+      main#glbl-payroll #glbl-payroll-cards .row .payroll-cards {
+        width: 100%;
+        height: max-content; }
+  main#glbl-payroll #glbl-payroll-book {
+    padding: 80px 0; }
+    main#glbl-payroll #glbl-payroll-book .column h2, main#glbl-payroll #glbl-payroll-book .column .h2 {
+      text-align: center;
+      width: 100%; } }
 
 .log-in {
   display: flex;

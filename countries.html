@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60144401d8ab4663b07173fa_32x32.png" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
@@ -19,33 +20,70 @@
                         </a>
                     </div>
                     <div class="menu col-9">
-                        
                         <ul>
-                           <li><a href="">How it works</a>  </li>
-                           <li><a href="">Why Panther</a></li>
-                           <li><a href="">Pricing</a></li>
-                           <li><a href="">Countries</a></li>
-                           <li><a href="">Resources</a></li>
+                            <li id="howitwork">
+                                <a href="">How it works <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon"></a>
+                                <div class="dropdown-menu-header col-5">
+                                    <ul>
+                                        <li><a href="">Global Employment</a></li>
+                                        <li><a href="">Globall Payroll</a></li>
+                                        <li><a href="">Contractors</a></li>
+                                        <li><a href="">Benefits</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Why Panther</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Countries</a></li>
+                            <li id="headresources">
+                                <a href="">Resources <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon-2"></a>
+                                <div class="second-dropdown-menu-header col-8">
+
+                                    <ul>
+                                        <h5>Partners</h5>
+                                        <li><a href="">All Partner programs</a></li>
+                                        <li><a href="">Panther for Startups</a></li>
+                                        <li><a href="">Referral Partner</a></li>
+
+                                        <h5>Being remote</h5>
+
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">How to get a remote job</a></li>
+                                        <li><a href="">Remote Hiring & Inclusive Capitalism</a></li>
+                                        <h5>Blog</h5>
+                                        <h5>Community</h5>
+                                        <h5>Case Studies</h5>
+                                        <h5>Help Center</h5>
+                                    </ul>
+
+                                </div>
+                            </li>
                         </ul>
                         <div class="log-in-book">
-                            <a href="" id="log-in-btn">Log in</a>
+                            <a href="log-in.html" id="log-in-btn">Log in</a>
                             <a href="" id="book-btn">Book a demo</a>
                         </div>
-                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
                     </div>
 
-                
+
+
                 </div>
             </div>
         </nav>
     </header>
-      
 
     <main id="countries">
         <section id="countries-header">
             <div class="container">
                 <div class="row">
-                    <div class="cntr-hd-left col-6">
+                    <div class="cntr-hd-left col-6" data-aos="fade-right" data-aos-duration="3000">
                         <h1>
                             Hire the world’s best,
                              wherever they call home. 
@@ -53,7 +91,7 @@
                         <br>
                         <p>Helping companies become talent-first, by staying away from geographical limitations, is our commitment to you and to employees around the globe. Hire with Panther in any of the following countries:</p>
                     </div>
-                    <div class="cntr-hd-right col-6">
+                    <div class="cntr-hd-right col-6" data-aos="fade-left" data-aos-duration="3000">
                         <img src="assets/images/countries.png" alt="">
                     </div>
                 </div>
@@ -323,7 +361,13 @@
                         <hr>
                        <div class="built-first-play col-3">
                            <p>Watch our 60-second video</p>
-                           <img src="assets/images/play-icon.svg" alt="">
+                           <img src="assets/images/play-icon.svg" alt="" class="link-watch-video">
+                           <div class="modal-page">
+                            <div class="video-container">
+                                <span class="close">&#10006;</span>
+                                <video src="https://www.youtube.com/watch?v=ei7sNwLzapI" controls></video>
+                            </div>
+                        </div>
                        </div>
                     </div>
                     <br><br>
@@ -331,39 +375,35 @@
                         <div class="build-second-cards col-3">
                             
                             <img src="assets/images/icon-benefits.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Global employment</h5>
-                            <br>
                             <p>Hire compliantly in over 160 countries</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="cntr-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
                         <div class="build-second-cards col-3">
                             <img src="assets/images/icon-contractors.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Global payroll</h5>
-                            <br>
                             <p>Pay everyone with one invoice, one click</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="cntr-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
                         <div class="build-second-cards col-3">
                             <img src="assets/images/icon-currencies.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Benefits</h5>
-                            <br>
                             <p>Keep your team healthy and productive</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="cntr-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
                         <div class="build-second-cards col-3">
                             <img src="assets/images/icon-employment.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Contractors</h5>
-                            <br>
                             <p>Hire and pay contractors in one place</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="cntr-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
 
                     </div>
@@ -376,54 +416,60 @@
     <footer>
         <div class="container">
             <div class="column">
-                <div class="footer-up col-12">
-                    <img src="assets/images/panther-logo.svg" alt="">
+                <div class="footer-up col-12">               
                     <div class="footer-menu col-9">
-                      <div class="footer-company col-3">
-                          <h5>COMPANY</h5>
-                          <ul>
-                              <li><a href="">About Us</a></li>
-                              <li><a href="">Contact Us</a></li>
-                              <li><a href="">Press</a></li>
-                              <li><a href="">Careers</a></li>
-                              <li><a href="">Help Center</a></li>
-                              <li><a href="">Webinars</a></li>
-                              <li><a href="">Our Manifesto</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-resources col-3">
-                          <h5>WORKING WITH PANTHER</h5>
-                          <p>Get employed with Panther</p>
-                          <br>
-                          <h5>RESOURCES</h5>
-                          <ul>
-                              <li><a href="">Community</a></li>
-                              <li><a href="">Blog</a></li>
-                              <li><a href="">Case Studies</a></li>
-                              <li><a href="">Release Notes</a></li>
-                              <li><a href="">How to get a remote job</a></li>
-                              <li><a href="">Help Center</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-legal col-3">
-                          <h5>LEGAL</h5>
-                          <ul>
-                              <li><a href="">Privacy Policy</a></li>
-                              <li><a href="">Terms and Conditions</a></li>
-                              <li><a href="">Terms of Use</a></li>
-                          </ul>
-                      </div>
+                        <img src="assets/images/panther-logo.svg" alt="">
+                        <br>
+                        <div class="footer-company col-3">
+                            <h5>COMPANY</h5>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Press</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Webinars</a></li>
+                                <li><a href="">Our Manifesto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-resources col-3">
+                            <h5>WORKING WITH PANTHER</h5>
+                            <p>Get employed with Panther</p>
+                            <br>
+                            <h5>RESOURCES</h5>
+                            <ul>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Case Studies</a></li>
+                                <li><a href="">Release Notes</a></li>
+                                <li><a href="">How to get a remote job</a></li>
+                                <li><a href="">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-legal col-3">
+                            <h5>LEGAL</h5>
+                            <ul>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">Terms of Use</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="subscribe col-3">
-                      <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
-                      <br>
-                      <p>Get the latest tips, news and resources on global employment and remote working.</p>
-                      <br>
-                      <input type="text" placeholder="Name">
-                      <br><br>
-                      <input type="email" placeholder="Email address">
-                      <br><br>
-                      <a href="">Submit</a>
+                        <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <br>
+                        <p>Get the latest tips, news and resources on global employment and remote working.</p>
+                        <br>
+                        <form class="footer-form" novalidate autocomplete="off">
+                            <input type="text" placeholder="Name" class="footer-input">
+                            <br><br>
+                            <input type="email" placeholder="Email address">
+                            <br>
+                            <span class="text-error d-none error">Write characters in forms</span>
+                            <br><br>
+                            <input type="submit" value="Submit" class="footer-submit"/>
+                        </form>
+                       
                     </div>
                 </div>
                 <br>
@@ -436,5 +482,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/countries.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -153,44 +153,52 @@ main#glbl{
                 }
             }
             .ftr-card{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-between;
-                border-radius: 16px;
-                background-color: #1b1734;
-                padding:  55px 45px;
-                .ftr-card-txt{
-                    @include flexbox;
-                    flex-direction: column;
+                .ftr-card-item{
+                    @include flexbox; 
+                    flex-direction: row;
                     justify-content: space-between;
-                    align-items: flex-start;
-                    h5{
-                        color: #fff;
-                        font-size: 22px;
-                        line-height: 30px;
-                        font-weight: 400;
+                    border-radius: 16px;
+                    background-color: #1b1734;
+                    padding:  55px 45px;
+                    display: none;
+                    .ftr-card-txt{
+                        @include flexbox;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        h5{
+                            color: #fff;
+                            font-size: 22px;
+                            line-height: 30px;
+                            font-weight: 400;
+                        }
+                        p{
+    
+                            color: white;
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-weight: 300;
+                        }
+                        a{
+                            color: white;
+                            font-size: 16px;
+                            text-decoration: none;
+                            border-bottom: 1px solid #fff;
+                        }
                     }
-                    p{
-
-                        color: white;
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-weight: 300;
+                    .ftr-card-img{
+                        img{
+                            width: 480px;
+                            height: 320px;
+                            border-radius: 10px;
+                        }
                     }
-                    a{
-                        color: white;
-                        font-size: 16px;
-                        text-decoration: none;
-                        border-bottom: 1px solid #fff;
+                    &.show-ftr{
+                        display: flex;
                     }
                 }
-                .ftr-card-img{
-                    img{
-                        width: 480px;
-                        height: 320px;
-                        border-radius: 10px;
-                    }
-                }
+               
+              
             }
         }
     }
@@ -428,8 +436,9 @@ main#glbl{
             @include flexbox; 
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             .help-decide-head{
+               
                 h1{
                     font-family: Inter,sans-serif;
                     color: #fff;
@@ -439,12 +448,12 @@ main#glbl{
                 }
             }
             .help-decide-quest{
-
                 @include flexbox; 
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
                 .quest{
+                    cursor: pointer;
                     padding: 15px;
                    
                     h4{
@@ -454,6 +463,62 @@ main#glbl{
                         font-weight: 400;
                         text-align: right;
                     }
+                    .questopen{
+                        transition: all 0.5s linear;
+                         transform: rotate(90deg);
+                    }
+                }
+                
+                .quest-text{
+                    height: 0;
+                    overflow: hidden;
+                    transition: height 0.5s ease;
+                    p{
+                        max-width: 80%;
+                        font-family: Inter,sans-serif;
+                        color: #adaabf;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 300;
+                    }
+                    form{
+                        background-color: white;
+                        width: 85%;
+                        padding: 25px;
+                        border-radius: 10px;
+                        h4{
+                            text-align: center;
+                            font-size: 22px;
+                            line-height: 30px;
+                            font-weight: 400;
+                            color: #0f0d1e;
+                        }
+                        input{
+                            width: 100%;
+                            padding: 10px;
+                            border-radius: 5px;
+                            border: 1px solid rgba(0, 0, 0, 0.103);
+                        }
+                        input[type="submit"]{
+                            padding: 15px 25px;
+                            background-color: #5b35d5;
+                           color: white;
+                        }
+                        #check-label{
+                            width: 100%;
+                            @include flexbox; 
+                            flex-direction: row;
+                            justify-content: space-around;
+                            input[type="checkbox"]{
+                                width: 50px;
+                            }
+                        }
+                    }
+                   
+                }
+                .active{
+                    height: max-content;
+                   
                 }
             }
         }

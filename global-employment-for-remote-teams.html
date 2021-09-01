@@ -22,7 +22,8 @@
                     <div class="menu col-9">
                         <ul>
                             <li id="howitwork">
-                                <a href="" id="">How it works <img src="assets/images/arrow-down-sign-to-navigate.png" alt="" class="dropdown-icon"></a>
+                                <a href="">How it works <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon"></a>
                                 <div class="dropdown-menu-header col-5">
                                     <ul>
                                         <li><a href="">Global Employment</a></li>
@@ -36,8 +37,9 @@
                             <li><a href="">Pricing</a></li>
                             <li><a href="">Countries</a></li>
                             <li id="headresources">
-                                <a href="">Resources <img src="assets/images/arrow-down-sign-to-navigate.png" alt="" class="dropdown-icon"></a>
-                                <div class="second-dropdown-menu-header  col-5">
+                                <a href="">Resources <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon-2"></a>
+                                <div class="second-dropdown-menu-header col-8">
 
                                     <ul>
                                         <h5>Partners</h5>
@@ -146,24 +148,75 @@
                    </div>
                    <br>
                    <div class="ftr-btn col-9" data-aos="flip-up" data-aos-duration="1000">
-                       <a href="" class="active">Automated compliance</a>
-                       <a href="">Digital agreements</a>
-                       <a href="">One-click payroll</a>
-                       <a href="">Self-onboarding</a>
-                       <a href="">Benefits</a>
+                       <a href="#"  data-ftr="automated" class="ftr-click active">Automated compliance</a>
+                       <a href="#" data-ftr="agreements" class="ftr-click">Digital agreements</a>
+                       <a href="#" data-ftr="oneclick" class="ftr-click">One-click payroll</a>
+                       <a href="#" data-ftr="selfonboarding" class="ftr-click">Self-onboarding</a>
+                       <a href="#" data-ftr="benefits" class="ftr-click">Benefits</a>
                    </div>
                    <br><br>
                    <div class="ftr-card col-12" data-aos="flip-up" data-aos-duration="1000">
-                       <div class="ftr-card-txt col-5">
-                           <h5>Bulletproof compliance put on auto-pilot.</h5>
-                           <br>
-                           <p>Take back control of your work and time. Panther automates your compliance and taxes, so you can get back to doing the things that matter.</p>
-                           <br>
-                           <a href="">See Global employment </a>
+                       <div class="ftr-card-item col-12 show-ftr" id="automated">
+                        <div class="ftr-card-txt col-5">
+                            <h5>Bulletproof compliance put on auto-pilot.</h5>
+                            <br>
+                            <p>Take back control of your work and time. Panther automates your compliance and taxes, so you can get back to doing the things that matter.</p>
+                            <br>
+                            <a href="">See Global employment </a>
+                        </div>
+                        <div class="ftr-card-img col-5">
+                            <img src="assets/images/main-feature-2.png" alt="">
+                        </div>
                        </div>
-                       <div class="ftr-card-img col-5">
-                           <img src="assets/images/main-feature-2.png" alt="">
+                       <div class="ftr-card-item col-12" id="agreements">
+                        <div class="ftr-card-txt col-5">
+                            <h5>Contracts and agreements available in minutes.</h5>
+                            <br>
+                            <p>Get locally compliant and fully customized contracts in 48 business hours or less, sent by our local HR experts via our platform.</p>
+                            <br>
+                            <a href="">See Global employment </a>
+                        </div>
+                        <div class="ftr-card-img col-5">
+                            <img src="assets/images/main-feature-1.png" alt="">
+                        </div>
                        </div>
+                       <div class="ftr-card-item col-12" id="oneclick">
+                        <div class="ftr-card-txt col-5">
+                            <h5>Pay your entire team with one invoice and one click.</h5>
+                            <br>
+                            <p>We help you keep things simple. Get a single invoice for your entire global team. When it's time to pay, all it takes is one click.</p>
+                            <br>
+                            <a href="">See Global payroll </a>
+                        </div>
+                        <div class="ftr-card-img col-5">
+                            <img src="assets/images/main-feature-3.png" alt="">
+                        </div>
+                       </div>
+                       <div class="ftr-card-item col-12" id="selfonboarding">
+                        <div class="ftr-card-txt col-5">
+                            <h5>New employees can onboard in seconds.</h5>
+                            <br>
+                            <p>Put the magic of async into your hiring process. New teammates can onboard on their own, via the platform.</p>
+                            <br>
+                            <a href="">See Global employment </a>
+                        </div>
+                        <div class="ftr-card-img col-5">
+                            <img src="assets/images/main-feature-5.png" alt="">
+                        </div>
+                       </div>
+                       <div class="ftr-card-item col-12" id="benefits">
+                        <div class="ftr-card-txt col-5">
+                            <h5>Spoil your teammates with the care that they deserve.</h5>
+                            <br>
+                            <p>Offer your remote teammates the benefits they need to work and live happily. We empower you to give them access to worldwide, private health insurance.</p>
+                            <br>
+                            <a href="">See benefits</a>
+                        </div>
+                        <div class="ftr-card-img col-5">
+                            <img src="assets/images/main-feature-6.png" alt="">
+                        </div>
+                       </div>
+                      
                    </div>
                </div>
            </div>
@@ -340,16 +393,52 @@
                      <div class="help-decide-head col-5" data-aos="fade-up" data-aos-duration="1000">
                          <h1>We can help you decide.</h1>
                      </div>
-                     <div class="help-decide-quest col-5" data-aos="fade-up" data-aos-duration="1000">
-                         <div class="quest">
-                             <h4>What does traditional global employment look like? <img src="assets/images/right-arrow.png" alt=""></h4>
+                     <div class="help-decide-quest col-7" data-aos="fade-up" data-aos-duration="1000">
+                         <div class="quest" data-target="whatdoes">
+                             <h4>What does traditional global employment look like? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown" ></h4>
                          </div>
-                         <div class="quest">
-                             <h4>You’re a startup. Can I trust you in the long-run? <img src="assets/images/right-arrow.png" alt=""></h4>
+                         <div class="quest-text" id="whatdoes">
+                             <p>Without Panther, you have to be ready to spend hundreds of dollars to employ globally. For eg., if you’re looking to hire in one country only, you’ll be spending $80,000 minimum.
+                                 <br><br>
+                                That’s because hiring abroad typically requires building or buying a local branch, registering it as a subsidiary of your headquarters, filing for local bank accounts, keeping up to date with changing local labor laws and collective bargaining rights, and contracting local payroll, accounting, legal, and HR personnel. This process takes months if you're lucky, a year if you're not.
+                                ‍<br><br>
+                                Panther eliminates the need for a local subsidiary by taking over the heavy lifting and saving you tens of thousands of dollars—and precious time.</p>
                          </div>
-                         <div class="quest">
-                             <h4>I already work with another EOR. How can I transition? <img src="assets/images/right-arrow.png" alt=""></h4>
+                         <div class="quest" data-target="youarestarup">
+                             <h4>You’re a startup. Can I trust you in the long-run? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown"></h4>
                          </div>
+                         <div class="quest-text"
+                         id="youarestarup">
+                           <p>Yes. We’re backed by some of the best minds and companies in the world, we’ve helped multiple businesses (some valued at over $1B) employ incredible people from all over the world, and our global legal infrastructure is top notch. We nurture strong relationships with massive organizations, like Amazon Web Services (AWS), and we work with some of the most talented, passionate and dedicated people in the world: our team.</p>
+                        </div>
+                         <div class="quest" data-target="alreadywork"> 
+                             <h4>I already work with another EOR. How can I transition? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown"></h4>
+                         </div>
+                         <div class="quest-text" id="alreadywork">
+                             <p>Don’t worry, it’s not complicated. To know more, download our EOR transition guide below.</p>
+                            <form action="">
+                                <h4>Get access to our EOR Transition guide</h4>
+                                <br><br>
+                                <label for="">Name*</label><br>
+                                <input type="text" placeholder="First and last name">
+                                <br><br>
+                                <label for="">Work Email*</label><br>
+                                <input type="email" placeholder="Work email address">
+                                <br><br>
+                                <label for="">Company*</label><br>
+                                <input type="text" placeholder="Your company">
+                                <br><br>
+                                <label for="">Company website*</label><br>
+                                <input type="url" placeholder="Your company website">
+                                <br><br>
+                                <input type="submit" value="Download">
+                                <br><br>
+                                <label for="" id="check-label">
+                                    <input type="checkbox">
+                                    <span>Sign me up for updates and Panther’s newsletter</span>
+                                </label>
+                            </form>
+                        </div>
                      </div>
                  </div>
              </div>
@@ -357,57 +446,63 @@
      </main>
 
 
-    <footer>
+     <footer>
         <div class="container">
             <div class="column">
-                <div class="footer-up col-12">
-                    <img src="assets/images/panther-logo.svg" alt="">
+                <div class="footer-up col-12">               
                     <div class="footer-menu col-9">
-                      <div class="footer-company col-3">
-                          <h5>COMPANY</h5>
-                          <ul>
-                              <li><a href="">About Us</a></li>
-                              <li><a href="">Contact Us</a></li>
-                              <li><a href="">Press</a></li>
-                              <li><a href="">Careers</a></li>
-                              <li><a href="">Help Center</a></li>
-                              <li><a href="">Webinars</a></li>
-                              <li><a href="">Our Manifesto</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-resources col-3">
-                          <h5>WORKING WITH PANTHER</h5>
-                          <p>Get employed with Panther</p>
-                          <br>
-                          <h5>RESOURCES</h5>
-                          <ul>
-                              <li><a href="">Community</a></li>
-                              <li><a href="">Blog</a></li>
-                              <li><a href="">Case Studies</a></li>
-                              <li><a href="">Release Notes</a></li>
-                              <li><a href="">How to get a remote job</a></li>
-                              <li><a href="">Help Center</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer-legal col-3">
-                          <h5>LEGAL</h5>
-                          <ul>
-                              <li><a href="">Privacy Policy</a></li>
-                              <li><a href="">Terms and Conditions</a></li>
-                              <li><a href="">Terms of Use</a></li>
-                          </ul>
-                      </div>
+                        <img src="assets/images/panther-logo.svg" alt="">
+                        <br>
+                        <div class="footer-company col-3">
+                            <h5>COMPANY</h5>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Press</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Webinars</a></li>
+                                <li><a href="">Our Manifesto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-resources col-3">
+                            <h5>WORKING WITH PANTHER</h5>
+                            <p>Get employed with Panther</p>
+                            <br>
+                            <h5>RESOURCES</h5>
+                            <ul>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Case Studies</a></li>
+                                <li><a href="">Release Notes</a></li>
+                                <li><a href="">How to get a remote job</a></li>
+                                <li><a href="">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-legal col-3">
+                            <h5>LEGAL</h5>
+                            <ul>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">Terms of Use</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="subscribe col-3">
-                      <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
-                      <br>
-                      <p>Get the latest tips, news and resources on global employment and remote working.</p>
-                      <br>
-                      <input type="text" placeholder="Name">
-                      <br><br>
-                      <input type="email" placeholder="Email address">
-                      <br><br>
-                      <a href="">Submit</a>
+                        <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <br>
+                        <p>Get the latest tips, news and resources on global employment and remote working.</p>
+                        <br>
+                        <form class="footer-form" novalidate autocomplete="off">
+                            <input type="text" placeholder="Name" class="footer-input">
+                            <br><br>
+                            <input type="email" placeholder="Email address">
+                            <br>
+                            <span class="text-error d-none error">Write characters in forms</span>
+                            <br><br>
+                            <input type="submit" value="Submit" class="footer-submit"/>
+                        </form>
+                       
                     </div>
                 </div>
                 <br>
@@ -422,6 +517,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/gl-empl-header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

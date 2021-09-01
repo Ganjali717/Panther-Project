@@ -22,20 +22,58 @@
                         </a>
                     </div>
                     <div class="menu col-9">
-
                         <ul>
-                            <li><a href="">How it works</a> </li>
+                            <li id="howitwork">
+                                <a href="">How it works <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon"></a>
+                                <div class="dropdown-menu-header col-5">
+                                    <ul>
+                                        <li><a href="">Global Employment</a></li>
+                                        <li><a href="">Globall Payroll</a></li>
+                                        <li><a href="">Contractors</a></li>
+                                        <li><a href="">Benefits</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="">Why Panther</a></li>
                             <li><a href="">Pricing</a></li>
                             <li><a href="">Countries</a></li>
-                            <li><a href="">Resources</a></li>
+                            <li id="headresources">
+                                <a href="">Resources <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon-2"></a>
+                                <div class="second-dropdown-menu-header col-8">
+
+                                    <ul>
+                                        <h5>Partners</h5>
+                                        <li><a href="">All Partner programs</a></li>
+                                        <li><a href="">Panther for Startups</a></li>
+                                        <li><a href="">Referral Partner</a></li>
+
+                                        <h5>Being remote</h5>
+
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">How to get a remote job</a></li>
+                                        <li><a href="">Remote Hiring & Inclusive Capitalism</a></li>
+                                        <h5>Blog</h5>
+                                        <h5>Community</h5>
+                                        <h5>Case Studies</h5>
+                                        <h5>Help Center</h5>
+                                    </ul>
+
+                                </div>
+                            </li>
                         </ul>
                         <div class="log-in-book">
-                            <a href="" id="log-in-btn">Log in</a>
+                            <a href="log-in.html" id="log-in-btn">Log in</a>
                             <a href="" id="book-btn">Book a demo</a>
                         </div>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
                     </div>
+
 
 
                 </div>
@@ -45,7 +83,7 @@
 
     <main>
         <section id="empl-ret-str">
-            <div class="container">
+            <div class="container container-sm container-md container-lg">
                 <div class="column">
                     <div class="empl-head col-8">
                         <h1>5+ remote employee retention strategies to keep your top performers</h1>
@@ -252,9 +290,10 @@
     <footer>
         <div class="container">
             <div class="column">
-                <div class="footer-up col-12">
-                    <img src="assets/images/panther-logo.svg" alt="">
+                <div class="footer-up col-12">               
                     <div class="footer-menu col-9">
+                        <img src="assets/images/panther-logo.svg" alt="">
+                        <br>
                         <div class="footer-company col-3">
                             <h5>COMPANY</h5>
                             <ul>
@@ -295,11 +334,16 @@
                         <br>
                         <p>Get the latest tips, news and resources on global employment and remote working.</p>
                         <br>
-                        <input type="text" placeholder="Name">
-                        <br><br>
-                        <input type="email" placeholder="Email address">
-                        <br><br>
-                        <a href="">Submit</a>
+                        <form class="footer-form" novalidate autocomplete="off">
+                            <input type="text" placeholder="Name" class="footer-input">
+                            <br><br>
+                            <input type="email" placeholder="Email address">
+                            <br>
+                            <span class="text-error d-none error">Write characters in forms</span>
+                            <br><br>
+                            <input type="submit" value="Submit" class="footer-submit"/>
+                        </form>
+                       
                     </div>
                 </div>
                 <br>
@@ -312,6 +356,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

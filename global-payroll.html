@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global payroll with one click</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://assets-global.website-files.com/5fe9c5e22d0827321f923fc1/60144401d8ab4663b07173fa_32x32.png"
         rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -22,20 +24,58 @@
                         </a>
                     </div>
                     <div class="menu col-9">
-
                         <ul>
-                            <li><a href="">How it works</a> </li>
+                            <li id="howitwork">
+                                <a href="">How it works <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon"></a>
+                                <div class="dropdown-menu-header col-5">
+                                    <ul>
+                                        <li><a href="">Global Employment</a></li>
+                                        <li><a href="">Globall Payroll</a></li>
+                                        <li><a href="">Contractors</a></li>
+                                        <li><a href="">Benefits</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="">Why Panther</a></li>
                             <li><a href="">Pricing</a></li>
                             <li><a href="">Countries</a></li>
-                            <li><a href="">Resources</a></li>
+                            <li id="headresources">
+                                <a href="">Resources <img src="assets/images/arrow-down-sign-to-navigate.png" alt=""
+                                        class="dropdown-icon-2"></a>
+                                <div class="second-dropdown-menu-header col-8">
+
+                                    <ul>
+                                        <h5>Partners</h5>
+                                        <li><a href="">All Partner programs</a></li>
+                                        <li><a href="">Panther for Startups</a></li>
+                                        <li><a href="">Referral Partner</a></li>
+
+                                        <h5>Being remote</h5>
+
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">How to get a remote job</a></li>
+                                        <li><a href="">Remote Hiring & Inclusive Capitalism</a></li>
+                                        <h5>Blog</h5>
+                                        <h5>Community</h5>
+                                        <h5>Case Studies</h5>
+                                        <h5>Help Center</h5>
+                                    </ul>
+
+                                </div>
+                            </li>
                         </ul>
                         <div class="log-in-book">
-                            <a href="" id="log-in-btn">Log in</a>
+                            <a href="log-in.html" id="log-in-btn">Log in</a>
                             <a href="" id="book-btn">Book a demo</a>
                         </div>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
                     </div>
+
 
 
                 </div>
@@ -43,16 +83,18 @@
         </nav>
     </header>
 
+
     <main id="glbl-payroll">
-        <section id="glbl-payroll-header">
+        <section id="glbl-payroll-header">  
             <div class="container">
                 <div class="row">
-                    <div class="payroll-header-left col-6">
+                    <div class="payroll-header-left col-6" data-aos="fade-right" data-aos-duration="3000">
                         <h1>Pay your global, remote team with one click</h1>
                         <br>
                         <a href="">Book a demo</a>
                     </div>
-                    <div class="payroll-header-right col-6">
+                    <br>
+                    <div class="payroll-header-right col-6" data-aos="fade-left" data-aos-duration="3000">
                         <img src="assets/images/payroll-global.png" alt="">
                     </div>
                 </div>
@@ -61,63 +103,78 @@
         <section id="glbl-payroll-cards">
             <div class="container">
                 <div class="row">
-
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-invoice.svg" alt="">
                         <br><br>
                         <h4>One invoice for your entire team.</h4>
                         <br>
                         <p>We combine all your payments in one place.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-compensation.svg" alt="">
                         <br><br>
-                        <h4>One invoice for your entire team.</h4>
+                        <h4>Add in compensations and reimbursements.</h4>
                         <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>Include them into contracts, or add them later as one-time or recurring payments every time you run payroll.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-checkmark-circle.svg" alt="">
+                        <br><br>
+                        <h4>Approve Payroll with one click.</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>A push of a button is all it takes to pay your teammates, wherever they are.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-payments.svg" alt="">
+                        <br><br>
+                        <h4>Team gets paid on time, every time.</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>For your teammates, payday is always business as usual.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-history.svg" alt="">
+                        <br><br>
+                        <h4>Detailed payments overview.</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>Get the numbers on local tax, and know how much you’re paying with each payroll.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-currencies.svg" alt="">
+                        <br><br>
+                        <h4>Payroll history</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>Have a sense of the bigger picture, with a month-to-month outline of your expenses.</p>
 
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-safe.svg" alt="">
+                        <br><br>
+                        <h4>70+ local payout methods</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>You pay in USD; your teammates get paid in their local currency.</p>
                     </div>
-                    <div class="payroll-cards col-6">
+                    <div class="payroll-cards" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                         <img src="assets/images/icon-safe.svg" alt="">
+                        <br><br>
+                        <h4>Secure payments</h4>
                         <br>
-                        <h4>One invoice for your entire team.</h4>
-                        <br>
-                        <h5>We combine all your payments in one place.</h5>
+                        <p>With the highest industry standards in place, safer and faster payments are a guarantee.</p>
                     </div>
                     
 
@@ -127,26 +184,52 @@
         <section id="glbl-payroll-book">
             <div class="container">
                 <div class="column">
-                    <h2>Payday is business as usual with Panther</h2>
+                    <h2 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Payday is business as usual with Panther</h2>
                     <br>
-                    <a href="">Book a demo</a>
+                    <a href="" data-aos="fade-up"
+                    data-aos-duration="3000">Book a demo</a>
                 </div>
             </div>
         </section>
         <section id="glbl-payroll-questions">
             <div class="container">
-                <div class="row">
-                    <div class="payroll-faq-left col-6">
+                <div class="row ">
+                    <div class="payroll-faq-left col-5" data-aos="fade-down-right" data-aos-duration="1000">
                         <h1>Common questions.</h1>
                     </div>
-                    <div class="payroll-faq-right col-6">
-                        <ul>
-                            <li>How do I pay my teammates if they're from different countries?</li>
-                            <li>How do you calculate Gross and Net salary?</li>
-                            <li>What payment methods are available for me?</li>
-                            <li>How can I get in touch with Panther?</li>
-                        </ul>
-                        <br><br>
+                    <br>
+                    <div class="payroll-faq-right col-7" data-aos="fade-down-left" data-aos-duration="1000">
+                          <div class="faq-question" data-payroll="howdoipay"><h5>How do I pay my teammates if they're from different countries? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown" ></h5></div>
+                          <div class="faq-answers" id="howdoipay"> <p>
+                            We charge you in USD and pay your employees in their local currency, using the mid-market rate. Currency fluctuations may impact the amount you pay, as your employees will always be paid the same amount in their local currency.
+                            <br><br>
+                           All that with one invoice, only, for your entire global team.
+                          </p>
+                          </div>
+                          <br>
+                          <div class="faq-question" data-payroll="howcalculate"><h5>How do you calculate Gross and Net salary? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown" ></h5></div>
+                          <div class="faq-answers" id="howcalculate"><p>
+                            Gross salary is the pre-tax amount that is awarded to the employee. It includes social security contributions and/or other payments or taxes mandatory by local laws, along with income tax, which varies both according to local laws and the employee's personal tax situation.
+                             <br><br>
+                            ‍Net salary is the post-tax amount that the employee actually receives in their bank account. The rules for calculating the net salary also vary from country to country according to their legal framework.
+                          </p></div>
+                          <br>
+                          <div class="faq-question" data-payroll="paymentmethods"><h5>What payment methods are available for me? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown" ></h5></div>
+                           <div class="faq-answers" id="paymentmethods">
+                               <p>
+                                We currently support direct debits via ACH in the United States and via SEPA in the Eurozone.
+                               </p>
+                           </div>
+                          <br>
+                          <div class="faq-question" data-payroll="touchpanther"><h5>How can I get in touch with Panther? <img src="assets/images/right-arrow.png" alt="" class="quest-dropdown" ></h5></div>
+                          <div class="faq-answers" id="touchpanther">
+                              <p>
+                                Email us at <a href=""> hi@panther.co</a>, or use the contact form in the <a href="">Contact page</a>.
+                              </p>
+                          </div>
+                          <br><br>
                         <p>— Head over to our <a href="">Help Center</a> for more answers.</p>
                     </div>
                 </div>
@@ -160,48 +243,43 @@
                         <hr>
                        <div class="built-first-play col-3">
                            <p>Watch our 60-second video</p>
-                           <img src="assets/images/play-icon.svg" alt="">
+                           <img src="assets/images/play-icon.svg" alt="" class="link-watch-video">
+                           <div class="modal-page">
+                            <div class="video-container">
+                                <span class="close">&#10006;</span>
+                                <video src="https://www.youtube.com/watch?v=ei7sNwLzapI" controls></video>
+                            </div>
+                        </div>
                        </div>
                     </div>
                     <br><br>
                     <div class="payroll-build-second col-12">
                         <div class="build-second-cards col-3">
+                            <img src="assets/images/icon-employment.svg" alt="">
+                            <br><br>
+                            <h5>Contractors</h5>
+                            <p>Hire and pay contractors in one place</p>
+                            <br>
+                            <a href="">Learn more <img id="build-cards-icon" src="assets/images/right-arrow.png" alt=""></a>
+                        </div>
+                        <div class="build-second-cards col-3">
                             
                             <img src="assets/images/icon-benefits.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Global employment</h5>
-                            <br>
                             <p>Hire compliantly in over 160 countries</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="build-cards-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
                         <div class="build-second-cards col-3">
                             <img src="assets/images/icon-contractors.svg" alt="">
-                            <br>
+                            <br><br>
                             <h5>Global payroll</h5>
-                            <br>
                             <p>Pay everyone with one invoice, one click</p>
                             <br>
-                            <a href="">Learn more</a>
+                            <a href="">Learn more <img id="build-cards-icon" src="assets/images/right-arrow.png" alt=""></a>
                         </div>
-                        <div class="build-second-cards col-3">
-                            <img src="assets/images/icon-currencies.svg" alt="">
-                            <br>
-                            <h5>Benefits</h5>
-                            <br>
-                            <p>Keep your team healthy and productive</p>
-                            <br>
-                            <a href="">Learn more</a>
-                        </div>
-                        <div class="build-second-cards col-3">
-                            <img src="assets/images/icon-employment.svg" alt="">
-                            <br>
-                            <h5>Contractors</h5>
-                            <br>
-                            <p>Hire and pay contractors in one place</p>
-                            <br>
-                            <a href="">Learn more</a>
-                        </div>
+                        
 
                     </div>
                 </div>
@@ -213,9 +291,10 @@
     <footer>
         <div class="container">
             <div class="column">
-                <div class="footer-up col-12">
-                    <img src="assets/images/panther-logo.svg" alt="">
+                <div class="footer-up col-12">               
                     <div class="footer-menu col-9">
+                        <img src="assets/images/panther-logo.svg" alt="">
+                        <br>
                         <div class="footer-company col-3">
                             <h5>COMPANY</h5>
                             <ul>
@@ -256,11 +335,16 @@
                         <br>
                         <p>Get the latest tips, news and resources on global employment and remote working.</p>
                         <br>
-                        <input type="text" placeholder="Name">
-                        <br><br>
-                        <input type="email" placeholder="Email address">
-                        <br><br>
-                        <a href="">Submit</a>
+                        <form class="footer-form" novalidate autocomplete="off">
+                            <input type="text" placeholder="Name" class="footer-input">
+                            <br><br>
+                            <input type="email" placeholder="Email address">
+                            <br>
+                            <span class="text-error d-none error">Write characters in forms</span>
+                            <br><br>
+                            <input type="submit" value="Submit" class="footer-submit"/>
+                        </form>
+                       
                     </div>
                 </div>
                 <br>
@@ -273,6 +357,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gl-payroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

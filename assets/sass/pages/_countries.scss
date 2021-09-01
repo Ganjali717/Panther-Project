@@ -108,6 +108,44 @@ main#countries{
                         height: 30px;
                         cursor: pointer;
                     }
+                    .video-container{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 99999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all 0.5s;
+                        .close{
+                            position: absolute;
+                            top: 10%;
+                            right: 25px;
+                            font-size: 25px;
+                            cursor: pointer;
+                            font-size: 25px;
+                            cursor: pointer;
+                        }
+                        video{
+                            width: 90%;
+                            max-width: 800px;
+                            transform: scale(0);
+                            box-shadow: 0 20px 20px rgba(0, 0,0,0.2);
+                            outline: none;
+                            transition: all 0.5s;
+                        }
+                    }
+                    .show{
+                        pointer-events: all;
+                        opacity: 1;
+                    }
+                    .show video{
+                        transform: scale(1);
+                    }
                 }
             }
             .countries-build-second{
@@ -115,9 +153,9 @@ main#countries{
                 flex-direction: row;
                 justify-content: space-between !important;
                 .build-second-cards{
-                    img{
-                        width: 40px;
-                        height: 40px;
+                    &>img{
+                        width: 45px;
+                        height: 45px;
                     }
                     h5{
                         font-family: Inter,sans-serif;
@@ -135,8 +173,26 @@ main#countries{
                         font-weight: 400;
                         text-decoration: none;
                     }
+                    img#cntr-icon{
+                        width: 15px;
+                        height: 15px;
+                    }
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width:992px){
+    main#countries{
+      #countries-header{
+          .row{
+              .cntr-hd-right{
+                  img{
+                      width: 450px;
+                  }
+              }
+          }
+      }
     }
 }
