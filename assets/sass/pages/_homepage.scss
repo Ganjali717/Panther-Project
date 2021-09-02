@@ -299,6 +299,7 @@ main{
         width: 100%;
         height: max-content;
         padding: 50px 0;
+        overflow-x: hidden;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -753,6 +754,14 @@ main{
                     }
                     p{
                         width: 100%;
+                    }
+                }
+                .call-platform-image{
+                    width: 100%;
+                    img{    
+                        width: 200px !important;
+                        height: 150px ;
+                        margin-right: 25px;
                     }
                 }
             }

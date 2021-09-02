@@ -6,6 +6,7 @@ header{
     width: 100%;
     #navbar{
         @include flexbox;
+        flex-direction: column;
         width: 100%;
         height: max-content;
         background-color: #0f0d1e;
@@ -21,8 +22,7 @@ header{
         .menu{
             @include flexbox; 
             flex-direction: row;
-            position: relative;
-           
+            position: relative;  
             ul{
                 @include flexbox;
                 flex-direction: row;
@@ -151,6 +151,49 @@ header{
 
            
         }
+        }
+        .overlay{
+            height: 1000px;  
+            display: none;         
+            .column{
+                @include flexbox; 
+                flex-direction: column;
+                align-items: flex-start !important;
+                &>ul{
+                    @include flexbox; 
+                    flex-direction: column;
+                    list-style: none;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    li{
+                        padding: 15px;
+                       a{
+                           color: white;
+                           text-decoration: none;
+                       }
+                       .responsive-dropdown-first{
+                           display: none;
+                           ul{
+                               list-style: none;
+                               &>li{
+                                    a{
+                                        cursor: pointer;
+                                    }
+                               }
+                           }
+                       }
+                       .responsive-dropdown-second{
+                           display: none;
+                       }
+                       .active-respons-drop{
+                           display: block;
+                       }
+                    }
+                }
+            }
+        }
+        .active-overlay{
+            display: block;
         }
     }
 }

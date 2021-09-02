@@ -28,6 +28,44 @@ headresources.addEventListener('click', function(e){
 });
 
 
+//Responsive - dropdown menu
+
+let responsdrop = document.querySelector('#respons-first-list');
+let secondresponsdrop = document.querySelector('#respons-second-list');
+let responsmenu = document.querySelector('.responsive-dropdown-first');
+let secondresponsmenu = document.querySelector('.responsive-dropdown-second');
+let hamburgermenu = document.querySelector('.menu .bi-list');
+let overlay = document.querySelector('#navbar .overlay');
+
+responsdrop.addEventListener('click', function(e){
+    responsmenu.classList.add("active-respons-drop");
+    e.preventDefault();
+    document.addEventListener('click', function(e){
+        if(e.target != responsdrop){
+            responsmenu.classList.remove("active-respons-drop");
+        }
+    });
+});
+
+secondresponsdrop.addEventListener('click', function(e){ 
+    secondresponsmenu.classList.add("active-respons-drop");
+    document.addEventListener('click', function(e){
+        if(e.target != secondresponsdrop){
+            secondresponsmenu.classList.remove("active-respons-drop");
+        }
+    });
+});
+
+hamburgermenu.addEventListener('click', function(){
+     overlay.classList.add("active-overlay");
+     e.preventDefault();
+     document.addEventListener('click', function(e){
+         if(e.target != responsdrop){
+            overlay.classList.remove("active-overlay");
+         }
+     });
+});
+
 
 
 

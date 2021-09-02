@@ -9,7 +9,7 @@ main#glbl{
         @include flexbox; 
         flex-direction: column;
         width: 100%;
-        padding: 150px;
+        padding: 150px 0;
         background-color: #0f0d1e;
         .column{
             @include flexbox; 
@@ -59,7 +59,7 @@ main#glbl{
         width: 100%;
         height: max-content;
         background-color: #1b1734;
-        padding: 150px;
+        padding: 150px 0;
         .row{
             @include flexbox; 
             flex-direction: column;
@@ -112,7 +112,7 @@ main#glbl{
         width: 100%;
         height: max-content;
         background-color: #0f0d1e;
-        padding: 150px;
+        padding: 150px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -139,7 +139,7 @@ main#glbl{
             .ftr-btn{
                 @include flexbox; 
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
                 .active{
                     background-color: #1b1734;
                     border: 1px solid #66e7d8;
@@ -206,7 +206,7 @@ main#glbl{
         width: 100%;
         height: max-content;
         background-color: #1b1734;
-        padding: 150px;
+        padding: 150px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -266,7 +266,7 @@ main#glbl{
         width: 100%;
         height: max-content;
         background-color: #0f0d1e;
-        padding: 150px;
+        padding: 150px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -357,7 +357,7 @@ main#glbl{
     #form-contact-us{
         width: 100%;
         height: max-content;
-        padding: 150px;
+        padding: 150px 0;
         background-color: #0f0d1e;
 
         .row{
@@ -431,7 +431,7 @@ main#glbl{
     #help-decide{
         width: 100%;
         background-color: #1b1734;
-        padding: 150px;
+        padding: 150px 0;
         .row{
             @include flexbox; 
             flex-direction: row;
@@ -527,7 +527,7 @@ main#glbl{
         background-color: #5b35d5;
         width: 100%;
         height: max-content;
-        padding: 100px;
+        padding: 100px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -597,6 +597,228 @@ main#glbl{
                     color: #5b35d5;
                     font-size: 20px;
                 }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+    main#glbl{
+        #feature-section{
+         .ftr-btn{
+             .ftr-click{
+                padding: 15px 12px !important;
+             }
+         }
+         .ftr-card{
+             .ftr-card-item{
+                 .ftr-card-img{
+                     img{
+                         width: 300px !important;
+                     }
+                 }
+             }
+         }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    main#glbl{
+        #gl-empl-header{
+            .column{
+                .gl-empl-text{
+                    width: 100%;
+                }
+            }
+        }
+        #feature-section{
+            .ftr-header{
+                width: 100%;
+            }
+            .ftr-btn{
+                flex-wrap: nowrap;
+                .ftr-click{
+                   padding: 10px 15px !important;
+                }
+            }
+            .ftr-card{
+                
+                .ftr-card-item{
+                    flex-direction: column !important;
+                    .ftr-card-txt{
+                        width: 100%;
+                    }
+                    .ftr-card-img{
+                        width: 100%;
+                        margin-top: 15px;
+                        margin-left: 85px;
+                        img{
+                            width: 500px !important;
+                        }
+                    }
+                }
+            }
+           }
+           #cards-love{
+               
+            .cards-love-workers{
+                .workers-img{
+                    .worker{
+                        flex-direction: column !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    main#glbl{
+     #gl-empl-second-header{
+         padding: 100px 0 !important;
+       .row{
+           .why-choose-talent{
+               flex-direction: column !important;
+               .why-choose-left{
+                   width: 100% !important;
+               }
+               .why-choose-right{
+                width: 100% !important;
+            }
+           }
+       }
+     }
+     #feature-section{
+        .ftr-header{
+            width: 100%;
+        }
+        .ftr-btn{
+            flex-wrap: nowrap;
+            .ftr-click{
+                text-align: center;
+               padding: 2px  !important;
+              
+                   margin-right: 3px;
+               
+            }
+        }
+        .ftr-card{
+            
+            .ftr-card-item{
+                flex-direction: column !important;
+                .ftr-card-txt{
+                    width: 100%;
+                }
+                .ftr-card-img{
+                    width: 100%;
+                    margin-top: 18px;
+                    margin-left: 50px;
+                    img{
+                        width: 400px !important;
+                    }
+                }
+            }
+        }
+       }
+       #benefits{
+           .column{
+               .benefits-list{
+                   width: 100%;
+                   flex-direction: column !important;
+                   .benefits-list-left{
+                       width: 100%;
+                   }
+                   .benefits-list-right{
+                       width: 100%;
+                   }
+               }
+           }
+       }
+       #hr{
+           .column{
+               .hr-list{
+                   width: 100%;
+                   flex-direction: column !important;
+                   .hr-list-left{
+                       width: 100%;
+                   }
+                   .hr-list-right{
+                       width: 100%;
+                   }
+               }
+           }
+       }
+       #form-contact-us{
+           .row{
+               flex-direction: column !important;
+               .form-text{
+                   width: 100%;
+               }
+               .form-right{
+                   margin-top: 45px;
+                   width: 90%;
+               }
+           }
+       }
+       #help-decide{
+           .row{
+               flex-direction: column !important;
+               align-items: flex-start !important;
+               .help-decide-head{
+                   width: 100%;
+               }
+               .help-decide-quest{
+                   width: 100%;
+                   .quest{
+                       width: 100%;
+                       h4{
+                           text-align: left;
+                       }
+                   }
+               }
+           }
+       }
+    }
+}
+
+@media only screen and  (max-width:600px){
+  main#glbl{
+      #gl-empl-second-header{
+         .row{
+             .why-choose-talent{
+                .why-choose-left{
+                    h3{
+                        width: 100%;
+                        font-size: 24px !important;
+                        line-height: 36px;
+                    }
+                 }
+             }
+            
+         }
+      }
+  }
+}
+
+@media only screen and (max-width:500px){
+    main#glbl{
+        #feature-section{
+            .ftr-card{
+                .ftr-card-item{
+                    .ftr-card-img{
+                        img{
+                            width: 300px !important;
+                        }
+                    }
+                }
+            }
+            
+        }
+        #form-contact-us{
+            .form-right{
+                width: 80% !important;
             }
         }
     }

@@ -6,7 +6,7 @@ main#countries{
     #countries-header{
         width: 100%;
         height: max-content;
-        padding: 150px;
+        padding: 150px 0;
         background-color: #0f0d1e;
         .row{
             @include flexbox; 
@@ -33,7 +33,7 @@ main#countries{
         width: 100%;
         height: max-content;
         background-color: #1b1734;
-        padding: 150px;
+        padding: 150px 0;
         .row{
             @include flexbox; 
             flex-direction: row;
@@ -51,7 +51,7 @@ main#countries{
         width: 100%;
         height: max-content;
         background-color: #0f0d1e;
-        padding: 150px;
+        padding: 150px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -75,7 +75,7 @@ main#countries{
         width: 100%;
         height: max-content;
         background-color: #1b1734;
-        padding: 150px;
+        padding: 150px 0;
         .column{
             @include flexbox; 
             flex-direction: column;
@@ -187,12 +187,108 @@ main#countries{
     main#countries{
       #countries-header{
           .row{
+              .cntr-hd-left{
+                  width: 100%;
+              }
               .cntr-hd-right{
                   img{
-                      width: 450px;
+                      display: none;
                   }
               }
           }
       }
+    }
+}
+
+@media only screen and (max-width:768px){
+    main#countries{
+        #countries-names{
+            .first-countries{
+                width: 50%;
+            }
+            .second-countries{
+                width: 50%;
+            }
+            .third-countries{
+                width: 50%;
+            }
+            .fourth-countries{
+                width: 50%;
+            }
+        }
+        #countries-build{
+            padding: 100px 0  ;
+            .column{
+              width: 100%;
+              .countries-build-first{
+                width: 100%;
+              }
+              .countries-build-second{
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                .build-second-cards{
+                  width: 100%;
+                }
+              }
+            }
+          }
+    }
+}
+
+@media only screen and (max-width:600px){
+    main#countries{
+        #countries-header{
+            width: 100%;
+            height: max-content;
+            padding: 150px 0;
+            background-color: #0f0d1e;
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between!important;
+                .cntr-hd-left{
+                   h1{
+                    font-size: 34px;
+                    font-family: Inter,sans-serif;
+                    color: #fff;
+                    line-height: 120%;
+                    font-weight: 600;
+                   }
+                   p{
+                    font-family: Inter,sans-serif;
+                    color: #adaabf;
+                     font-size: 20px;
+                     text-align: left;
+                   }
+                }
+            }
+        }
+        #countries-names{
+            .first-countries{
+              text-align: center;
+                width: 100%;
+            }
+            .second-countries{
+                text-align: center;
+                width: 100%;
+            }
+            .third-countries{
+                text-align: center;
+                width: 100%;
+            }
+            .fourth-countries{
+                text-align: center;
+                width: 100%;
+            }
+        }
+        #countries-book{
+            h1{
+                width: 100%;
+            }
+            a{
+                width: 100%;
+            }
+        }
     }
 }
