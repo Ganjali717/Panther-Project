@@ -1,39 +1,180 @@
 // Log-in page scss
 
 
-    
-.log-in{
-    @include flexbox; 
-    flex-direction: row;
-    height: 100%;
-    .log-in-left{
-        width: 30%;
-        height: 750px;
-        background-color: rgb(248, 248, 252);
-        aside{
+
+    .log {
+        padding: 0;
+        margin: 0;
+        .row{
             @include flexbox; 
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 25px;
-            .center-text{
-                @include flexbox; 
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center; 
-                h4{
-                    text-align: center;
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            overflow-y: hidden;
+            width: 100%;
+            .log-left{
+                width: 40%;
+                background-color: $color-bg-white;
+                height: 740px !important;
+                overflow-y: hidden;
+                float: left;
+                .log-head {
+                    padding: 1.5rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .svg-icon {
+                        padding: 0.5rem;
+                        margin-right: 0.75rem;
+                        border-radius: 4px;
+                        width: 4rem;
+                        height: 4rem;
+                        background-color: $color-link-hover;
+                    }
+    
+                    @media screen and (max-width:1028px) {
+                        justify-content: flex-start;
+                        padding-left: 24px;
+    
+                    }
+    
+                }
+    
+                .log-info {
+                    height: 100%;
+                    margin-bottom: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    h5 {
+                        width: 316px;
+                        font-size: 24px;
+                        line-height: 140%;
+                        font-weight: 600;
+                        color: rgb(91, 85, 127);
+                        text-align: center;
+                        padding: 2rem 0;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 600;
+                        color: rgb(132, 128, 159);
+                        text-align: center;
+                        padding: 3rem 0;
+                    }
+    
+                    .container-trust-logos {
+                        width: 316px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+    
+                        img {
+                            color: rgb(132, 128, 159);
+                            width: 10rem;
+                            padding-right: 1rem;
+                        }
+                    }
+    
+                    @media screen and (max-width:992px) {
+                        justify-content: flex-start;
+                        padding-left: 24px;
+    
+                    }
                 }
             }
+    
+            .log-right {
+                @include flexbox; 
+                flex-direction: column;
+                width: 60%;
+                height: 740px !important;
+                overflow-X: hidden;
+                .form-section {
+                      width: 40%;
+                    .form-info {
+                        color: black;
+                        h1 {
+                            font-size: 32px;
+                            line-height: 140%;
+    
+                            font-weight: 600;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 150%;
+                            font-weight: 400;
+                        }
+                    }
+                    .form{
+                        @include flexbox; 
+                        flex-direction: column;
+                        justify-content: space-between ;
+                        align-items: flex-start;
+                        input{
+                            width: 100%;
+                            padding: 10px 15px;
+                            border-radius: 5px;
+                            border:  1px solid rgba(0, 0, 0, 0.267);
+                        }
+                        input[type="submit"]{
+                            border-radius: 5px;
+                            background-color: rgba(91,53,213, 1 );
+                        }
+                        .form-resetpassword{
+                            @include flexbox; 
+                            flex-direction: row;
+                            width: 100%;
+                            justify-content: space-between !important;
+                            &>a{
+                                text-decoration: none;
+                                color: black;
+                                padding: 10px 12px;
+                                border-radius: 5px;
+                                border: 1px solid  rgba(0, 0, 0, 0.26);
+                            }
+                            &>input[type="submit"]{
+                                width: 200px;
+                            }
+                        }
+                       
+
+                    }
+                    .error small{
+                        color: #e74c3c;
+                        visibility: visible;
+                        font-size: 15px !important;
+                        text-align: center;
+                    }
+                    .form-footer {
+                        font-size: 1.5rem;
+                        a {
+                            font-size: 17px;
+                            color: $color-secondary !important;
+                        }
+    
+                        p {
+                            font-size: 17px;
+                            color: $color-black !important;
+                        }
+                    }
+    
+                }
+    
+                @media screen and (max-width:1028px) {
+                    min-width: 320px !important;
+                    text-align: left;
+                    margin-bottom: 3rem !important;
+    
+                }
+            }
+    
         }
+    
+
     }
-    .log-in-right{
-        width: 70%;
-        .column{
-            @include flexbox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}

@@ -13540,39 +13540,147 @@ main#glbl-payroll {
       text-align: center;
       width: 100%; } }
 
-.log-in {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100%; }
-  .log-in .log-in-left {
-    width: 30%;
-    height: 750px;
-    background-color: #f8f8fc; }
-    .log-in .log-in-left aside {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 25px; }
-      .log-in .log-in-left aside .center-text {
+.log {
+  padding: 0;
+  margin: 0; }
+  .log .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    overflow-y: hidden;
+    width: 100%; }
+    .log .row .log-left {
+      width: 40%;
+      background-color: #ebeaf5;
+      height: 740px !important;
+      overflow-y: hidden;
+      float: left; }
+      .log .row .log-left .log-head {
+        padding: 1.5rem 0;
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: center; }
-        .log-in .log-in-left aside .center-text h4, .log-in .log-in-left aside .center-text .h4 {
-          text-align: center; }
-  .log-in .log-in-right {
-    width: 70%; }
-    .log-in .log-in-right .column {
+        .log .row .log-left .log-head .svg-icon {
+          padding: 0.5rem;
+          margin-right: 0.75rem;
+          border-radius: 4px;
+          width: 4rem;
+          height: 4rem;
+          background-color: #5b35d5; }
+        @media screen and (max-width: 1028px) {
+          .log .row .log-left .log-head {
+            justify-content: flex-start;
+            padding-left: 24px; } }
+      .log .row .log-left .log-info {
+        height: 100%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .log .row .log-left .log-info h5, .log .row .log-left .log-info .h5 {
+          width: 316px;
+          font-size: 24px;
+          line-height: 140%;
+          font-weight: 600;
+          color: #5b557f;
+          text-align: center;
+          padding: 2rem 0; }
+        .log .row .log-left .log-info p {
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 600;
+          color: #84809f;
+          text-align: center;
+          padding: 3rem 0; }
+        .log .row .log-left .log-info .container-trust-logos {
+          width: 316px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center; }
+          .log .row .log-left .log-info .container-trust-logos img {
+            color: #84809f;
+            width: 10rem;
+            padding-right: 1rem; }
+        @media screen and (max-width: 992px) {
+          .log .row .log-left .log-info {
+            justify-content: flex-start;
+            padding-left: 24px; } }
+    .log .row .log-right {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      width: 60%;
+      height: 740px !important;
+      overflow-X: hidden; }
+      .log .row .log-right .form-section {
+        width: 40%; }
+        .log .row .log-right .form-section .form-info {
+          color: black; }
+          .log .row .log-right .form-section .form-info h1, .log .row .log-right .form-section .form-info .h1 {
+            font-size: 32px;
+            line-height: 140%;
+            font-weight: 600; }
+          .log .row .log-right .form-section .form-info p {
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 400; }
+        .log .row .log-right .form-section .form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start; }
+          .log .row .log-right .form-section .form input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.267); }
+          .log .row .log-right .form-section .form input[type="submit"] {
+            border-radius: 5px;
+            background-color: #5b35d5; }
+          .log .row .log-right .form-section .form .form-resetpassword {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between !important; }
+            .log .row .log-right .form-section .form .form-resetpassword > a {
+              text-decoration: none;
+              color: black;
+              padding: 10px 12px;
+              border-radius: 5px;
+              border: 1px solid rgba(0, 0, 0, 0.26); }
+            .log .row .log-right .form-section .form .form-resetpassword > input[type="submit"] {
+              width: 200px; }
+        .log .row .log-right .form-section .error small, .log .row .log-right .form-section .error .small {
+          color: #e74c3c;
+          visibility: visible;
+          font-size: 15px !important;
+          text-align: center; }
+        .log .row .log-right .form-section .form-footer {
+          font-size: 1.5rem; }
+          .log .row .log-right .form-section .form-footer a {
+            font-size: 17px;
+            color: #5b35d5 !important; }
+          .log .row .log-right .form-section .form-footer p {
+            font-size: 17px;
+            color: #000000 !important; }
+      @media screen and (max-width: 1028px) {
+        .log .row .log-right {
+          min-width: 320px !important;
+          text-align: left;
+          margin-bottom: 3rem !important; } }
+
+.log .log-right .form-section .hires .hire {
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  padding: 10px 25px !important; }
+  .log .log-right .form-section .hires .hire a {
+    text-decoration: none; }
