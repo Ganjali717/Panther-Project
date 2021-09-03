@@ -178,3 +178,36 @@
     
 
     }
+
+
+    @media only screen and (max-width:992px){
+        .log{
+            .row{
+                flex-direction: column !important;
+                  .log-left{
+                      width: 100%;
+                  }
+                  .log-right{
+                      width: 100%;
+                  }
+            }
+        }
+
+    }
+
+    @media only screen and (max-width:600px){
+        .log{
+            .row{
+                .log-right{
+                    width: 100% !important;
+                    padding-top: 150px;
+                    .form-resetpassword{
+                        flex-direction: column !important;
+                        &>input{
+                            width: 150px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }

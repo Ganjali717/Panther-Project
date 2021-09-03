@@ -11322,14 +11322,17 @@ header {
             header #navbar .row .menu .log-in-book #book-btn:hover {
               background-color: #3d7aeb; }
     header #navbar .overlay {
+      width: 100%;
       height: 1000px;
-      display: none; }
+      display: none;
+      background-color: #1b1734; }
       header #navbar .overlay .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        align-items: flex-start !important; }
+        align-items: flex-start !important;
+        padding: 45px; }
         header #navbar .overlay .column > ul {
           display: flex;
           justify-content: center;
@@ -11353,6 +11356,17 @@ header {
               display: none; }
             header #navbar .overlay .column > ul li .active-respons-drop {
               display: block; }
+        header #navbar .overlay .column .overlay-book > a {
+          text-decoration: none;
+          color: white;
+          padding: 10px 15px;
+          border-radius: 4px;
+          background-color: #0f0d1e; }
+        header #navbar .overlay .column .overlay-book > #overlay-book-btn {
+          color: white;
+          border-radius: 4px;
+          background-color: #5b35d5;
+          padding: 10px 15px; }
     header #navbar .active-overlay {
       display: block; }
 
@@ -13677,6 +13691,23 @@ main#glbl-payroll {
           min-width: 320px !important;
           text-align: left;
           margin-bottom: 3rem !important; } }
+
+@media only screen and (max-width: 992px) {
+  .log .row {
+    flex-direction: column !important; }
+    .log .row .log-left {
+      width: 100%; }
+    .log .row .log-right {
+      width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .log .row .log-right {
+    width: 100% !important;
+    padding-top: 150px; }
+    .log .row .log-right .form-resetpassword {
+      flex-direction: column !important; }
+      .log .row .log-right .form-resetpassword > input {
+        width: 150px !important; } }
 
 .log .log-right .form-section .hires .hire {
   border: 1px solid rgba(0, 0, 0, 0.116);

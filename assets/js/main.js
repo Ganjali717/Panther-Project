@@ -49,6 +49,7 @@ responsdrop.addEventListener('click', function(e){
 
 secondresponsdrop.addEventListener('click', function(e){ 
     secondresponsmenu.classList.add("active-respons-drop");
+    e.preventDefault();
     document.addEventListener('click', function(e){
         if(e.target != secondresponsdrop){
             secondresponsmenu.classList.remove("active-respons-drop");
